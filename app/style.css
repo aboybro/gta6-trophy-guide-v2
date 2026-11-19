@@ -1,7 +1,89 @@
-body { font-family: Arial, sans-serif; margin: 24px; color: #222; }
-header { display: flex; justify-content: space-between; align-items: baseline; }
-.controls { display: flex; gap: 16px; margin: 12px 0; align-items: center; }
-.import input { font-size: 12px; }
-table { border-collapse: collapse; width: 100%; }
-th, td { border-bottom: 1px solid #ddd; padding: 6px 8px; text-align: left; vertical-align: top; white-space: pre-line; }
-th { background: #f2f2f2; }
+/* Leonida Ledger — Atlas Edition. One look of its own: deep Leonida night,
+   sun-faded gold accents, dense but readable rows. No images, no web fonts. */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0 auto; max-width: 1180px; padding: 18px 22px 40px;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 15px; line-height: 1.45; color: #eef2f0; background: #12201f;
+}
+h1 { font-size: 30px; margin: 0; letter-spacing: .2px; }
+h2 { font-size: 20px; margin: 26px 0 4px; color: #ffd97a; }
+a { color: #8fd3ff; }
+.edition { color: #ffd97a; font-size: 19px; }
+.tagline { margin: 6px 0 0; color: #b9c9c4; max-width: 640px; }
+.masthead { display: flex; justify-content: space-between; gap: 24px; align-items: flex-start; }
+.progressBox { min-width: 250px; background: #1c322f; border: 1px solid #33524c; border-radius: 10px; padding: 12px 14px; }
+.progressNumbers { font-weight: 700; font-size: 17px; }
+.progressBar { height: 12px; background: #0c1715; border-radius: 6px; margin: 8px 0 6px; overflow: hidden; }
+.progressFill { height: 100%; width: 0; background: linear-gradient(90deg, #e8a13a, #ffd97a); }
+.progressSub { font-size: 13px; color: #b9c9c4; }
+.auditStrip {
+  margin: 16px 0 0; padding: 9px 12px; background: #233d33; border: 1px solid #4a7a5e;
+  border-radius: 8px; font-size: 14px; font-weight: 600; color: #d9f2e2;
+}
+.controls { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin: 14px 0 4px; }
+.controls input[type="search"] { padding: 7px 9px; border-radius: 6px; border: 1px solid #33524c; background: #0c1715; color: #eef2f0; font-size: 14px; width: 210px; }
+.kindFilters { display: flex; gap: 6px; flex-wrap: wrap; }
+.kindFilters button, #exportBtn {
+  padding: 7px 11px; border-radius: 6px; border: 1px solid #33524c; background: #1c322f;
+  color: #eef2f0; font-size: 14px; cursor: pointer;
+}
+.kindFilters button.active { background: #e8a13a; border-color: #e8a13a; color: #1a1405; font-weight: 700; }
+.controls select { padding: 7px; border-radius: 6px; border: 1px solid #33524c; background: #0c1715; color: #eef2f0; }
+.spoilerToggle, .importLabel { font-size: 14px; color: #b9c9c4; cursor: pointer; }
+.importLabel input { display: none; }
+.missableBanner { margin: 12px 0 0; padding: 10px 12px; background: #4a2418; border: 1px solid #c25e3a; border-radius: 8px; font-size: 14px; }
+.sectionNote { color: #b9c9c4; margin: 2px 0 10px; font-size: 14px; }
+.stageGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.stageCard { background: #1c322f; border: 1px solid #33524c; border-radius: 10px; padding: 12px 14px; }
+.stageCard h3 { margin: 0 0 2px; font-size: 16px; color: #ffd97a; }
+.stageHours { font-size: 13px; color: #b9c9c4; margin: 0 0 8px; }
+.stageCard p { margin: 6px 0; font-size: 14px; }
+.stageWarning { background: #4a2418; border: 1px solid #c25e3a; border-radius: 6px; padding: 7px 9px; font-size: 13px; }
+.stageTrophies { font-size: 13px; color: #d9f2e2; }
+.counterGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.counterCard { background: #1c322f; border: 1px solid #33524c; border-radius: 10px; padding: 10px 12px; }
+.counterCard h3 { margin: 0 0 2px; font-size: 14px; }
+.counterCard h3 button { all: unset; cursor: pointer; color: #8fd3ff; text-decoration: underline; }
+.counterBar { height: 8px; background: #0c1715; border-radius: 4px; overflow: hidden; margin: 7px 0; }
+.counterFill { height: 100%; background: #57b98a; }
+.counterRow { display: flex; align-items: center; gap: 8px; }
+.counterRow button { width: 30px; height: 30px; font-size: 17px; border-radius: 6px; border: 1px solid #33524c; background: #0c1715; color: #eef2f0; cursor: pointer; }
+.counterValue { font-weight: 700; font-size: 15px; min-width: 86px; text-align: center; }
+.counterValue input { width: 64px; padding: 4px; text-align: right; border-radius: 5px; border: 1px solid #33524c; background: #0c1715; color: #eef2f0; font-size: 14px; }
+.trophyList { display: flex; flex-direction: column; gap: 8px; }
+.trophyRow { background: #1c322f; border: 1px solid #33524c; border-radius: 10px; padding: 11px 13px; }
+.trophyRow.earned { border-color: #57b98a; }
+.trophyRow.missableRow { border-color: #c25e3a; }
+.trophyHead { display: flex; gap: 10px; align-items: flex-start; }
+.trophyHead input[type="checkbox"] { width: 19px; height: 19px; margin-top: 2px; accent-color: #e8a13a; flex: none; }
+.trophyTitle { font-size: 16px; font-weight: 700; }
+.gradeBadge { flex: none; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .5px; padding: 3px 7px; border-radius: 20px; margin-left: auto; }
+.grade-platinum { background: #7dd3fc; color: #082f49; }
+.grade-gold { background: #ffd97a; color: #3a2a00; }
+.grade-silver { background: #d7dee3; color: #1f2937; }
+.grade-bronze { background: #d99a5b; color: #2a1503; }
+.trophyDesc { margin: 3px 0 0 29px; color: #c8d8d2; font-style: italic; }
+.trophyMeta { margin: 6px 0 0 29px; font-size: 13px; color: #b9c9c4; display: flex; gap: 8px; flex-wrap: wrap; }
+.tag { background: #0c1715; border: 1px solid #33524c; border-radius: 20px; padding: 2px 8px; }
+.tag.missableTag { background: #4a2418; border-color: #c25e3a; color: #ffd0b8; font-weight: 700; }
+.tag.unconfirmedTag { background: #3a2f10; border-color: #e8a13a; color: #ffd97a; font-weight: 700; }
+.guideToggle { margin: 8px 0 0 29px; padding: 6px 10px; border-radius: 6px; border: 1px solid #33524c; background: #0c1715; color: #ffd97a; font-size: 14px; cursor: pointer; }
+.guideBody { margin: 10px 0 0 29px; border-top: 1px solid #33524c; padding-top: 8px; }
+.guideSummary { margin: 0 0 8px; }
+.citedSteps { margin: 0; padding-left: 22px; }
+.citedSteps li { margin: 0 0 7px; }
+.citeChip { display: inline-block; font-size: 12px; font-weight: 700; color: #8fd3ff; background: #0c2a3a; border: 1px solid #2b5a75; border-radius: 20px; padding: 1px 8px; margin-left: 6px; white-space: nowrap; }
+.guideSources { font-size: 13px; color: #b9c9c4; margin: 8px 0 0; }
+.spoilerMask { color: #5f7a72; font-style: normal; }
+#sourcesList { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+.sourceRow { background: #1c322f; border: 1px solid #33524c; border-radius: 8px; padding: 9px 11px; font-size: 14px; }
+.sourceRow strong { color: #ffd97a; }
+.sourceRow .sourceDate { color: #8fd3ff; font-weight: 700; }
+.honestyNote { margin-top: 12px; padding: 10px 12px; background: #3a2f10; border: 1px solid #e8a13a; border-radius: 8px; font-size: 14px; }
+footer { margin-top: 30px; border-top: 1px solid #33524c; padding-top: 12px; color: #8aa39b; font-size: 13px; }
+@media (max-width: 860px) {
+  .masthead { flex-direction: column; }
+  .stageGrid, .counterGrid, #sourcesList { grid-template-columns: 1fr; }
+}

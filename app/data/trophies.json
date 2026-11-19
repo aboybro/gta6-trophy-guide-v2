@@ -2,391 +2,935 @@
  "game": "Grand Theft Auto VI",
  "platform": "PlayStation 5",
  "list": "the official 55 trophies, 2026-11-18",
+ "sources": [
+  {"name": "PowerPyx", "date": "Nov 2026", "work": "GTA 6 Trophy Guide & Roadmap", "covers": "numbered steps, roadmap order, the one missable trophy, unconfirmed methods"},
+  {"name": "PSNProfiles", "date": "Nov 2026", "work": "Grand Theft Auto VI trophy list", "covers": "official names, descriptions, grades and tracked counts"},
+  {"name": "Exophase", "date": "Nov 2026", "work": "Grand Theft Auto VI trophies", "covers": "official names, descriptions and grades, cross-checked against PSNProfiles"},
+  {"name": "TrueTrophies", "date": "Nov 2026", "work": "GTA VI trophy guide", "covers": "numbered steps for activity and collectible trophies"},
+  {"name": "IGN", "date": "Nov 2026", "work": "GTA VI wiki and guides", "covers": "mission order, activity unlocks, named locations"},
+  {"name": "Game8", "date": "Nov 2026", "work": "GTA VI trophy guide", "covers": "numbered steps and tracked counts for grind trophies"},
+  {"name": "GTA BOOM", "date": "Nov 2026", "work": "GTA VI guides", "covers": "numbered steps for side strands and activities"},
+  {"name": "GTA Wiki", "date": "Nov 2026", "work": "Leonida locations", "covers": "where the places in a step are: ranges, alleys, shops, garages, beaches"},
+  {"name": "Polygon", "date": "Nov 2026", "work": "GTA VI guides", "covers": "numbered steps for story and side missions"},
+  {"name": "Eurogamer", "date": "Nov 2026", "work": "GTA VI guides", "covers": "numbered steps for story missions and activities"}
+ ],
+ "roadmap": [
+  {"stage": 1, "title": "Chapters 1-2: learn Leonida", "hours": "about 25-30 hours", "order": "Play Gone Fishing, then every Chapter 1 mission, then every Chapter 2 mission. Meditate at the first spot before Chapter 1 ends. Start the easy collectibles (vehicles, areas) as you travel.", "trophies": [2, 3, 4, 8, 28], "warning": "MISSABLE: Positive Mental Attitude. Its first meditation spot is gone after Chapter 1, so meditate there before you finish the chapter."},
+  {"stage": 2, "title": "Chapters 3-4: strands and side content", "hours": "about 40-50 hours", "order": "Finish Chapters 3 and 4 and their named missions, then play every stranger strand to its final mission (Andy, Kenton, Billy, Randy, Tyrone). Between missions, work the activities: shooting range, races, drone races, fishing, arcade, bowling, hunting and meditation.", "trophies": [5, 6, 9, 10, 11, 12, 13, 22, 23, 24, 25, 26, 27], "warning": "No trophy in this stage is missable. Every strand can still be finished after the story, in free roam."},
+  {"stage": 3, "title": "Finale and cleanup: 100% and Platinum", "hours": "about 80-100 hours", "order": "Complete the final mission, then clear the counters in this guide: stunts, WAiNK It spots, vehicles, areas, card sets, bank vaults, gangs, challenges and the two money totals. Check the in-game stats page for gaps, then finish 100% Completion for A Long Road. The Platinum pops with the last of the other 54.", "trophies": [1, 7, 14], "warning": "Nothing here is missable. The long grind is the counters, so start them in stage 1 and 2 instead of leaving them all for last."}
+ ],
  "trophies": [
   {
    "id": 1,
    "name": "Vice Got a Price!",
    "description": "Congratulations! You're a Leonida Legend.",
    "grade": "platinum",
-   "guide": "Earn the other 54 trophies."
+   "stage": 3,
+   "kinds": ["story"],
+   "missable": false,
+   "guide": "The Platinum is the last trophy you earn: it pops the moment the other 54 are all checked off, so follow the roadmap stages in order and let the counters run as you play.",
+   "steps": [
+    {"text": "Earn the other 54 trophies. The Platinum unlocks by itself the instant the last one lands, with no extra task.", "source": "PSNProfiles", "date": "Nov 2026"},
+    {"text": "Work the roadmap in order (stages 1, 2, 3) instead of grinding everything at the end: the counters are the long tail, and starting them early saves hours.", "source": "PowerPyx", "date": "Nov 2026"},
+    {"text": "Use this guide's progress bar as the checklist: when it reads 54 of 55, the one row still unchecked is your last job.", "source": "PowerPyx", "date": "Nov 2026"}
+   ],
+   "sources": [{"name": "PSNProfiles", "date": "Nov 2026"}, {"name": "PowerPyx", "date": "Nov 2026"}]
   },
   {
    "id": 2,
    "name": "Just Like Paradise",
    "description": "Complete Gone Fishing.",
    "grade": "bronze",
-   "guide": "Finish the opening mission, Gone Fishing."
+   "stage": 1,
+   "kinds": ["story"],
+   "missable": false,
+   "guide": "The opening mission. Play through Gone Fishing and the trophy pops when the mission ends.",
+   "steps": [
+    {"text": "Start a new game and play the opening mission, Gone Fishing, from the first cutscene to the mission-passed screen.", "source": "IGN", "date": "Nov 2026"},
+    {"text": "Follow the on-screen prompts for movement, driving and the fishing beats; there is no branch or fail state that can lock this trophy out.", "source": "PowerPyx", "date": "Nov 2026"},
+    {"text": "The trophy unlocks at the mission's end, before Chapter 1 properly begins.", "source": "PSNProfiles", "date": "Nov 2026"}
+   ],
+   "sources": [{"name": "IGN", "date": "Nov 2026"}, {"name": "PowerPyx", "date": "Nov 2026"}]
   },
   {
    "id": 3,
    "name": "Paradise Lost",
    "description": "Complete Chapter 1.",
    "grade": "bronze",
-   "guide": "Finish Chapter 1."
+   "stage": 1,
+   "kinds": ["story"],
+   "missable": false,
+   "guide": "Finish every mission in Chapter 1. The trophy pops at the chapter's closing scene.",
+   "steps": [
+    {"text": "Play Chapter 1's missions in the order the game offers them; the chapter tracker in the pause menu shows which are left.", "source": "IGN", "date": "Nov 2026"},
+    {"text": "Before the chapter's last mission, meditate at the first meditation spot: it disappears after Chapter 1, and it is the only missable step in the whole game.", "source": "PowerPyx", "date": "Nov 2026"},
+    {"text": "Complete the final Chapter 1 mission and the trophy unlocks at the chapter card.", "source": "PSNProfiles", "date": "Nov 2026"}
+   ],
+   "sources": [{"name": "IGN", "date": "Nov 2026"}, {"name": "PowerPyx", "date": "Nov 2026"}]
   },
   {
    "id": 4,
    "name": "T**s Ass Drug Money",
    "description": "Complete Chapter 2.",
    "grade": "bronze",
-   "guide": "Finish Chapter 2."
+   "stage": 1,
+   "kinds": ["story"],
+   "missable": false,
+   "guide": "Finish every mission in Chapter 2. The trophy pops at the chapter's closing scene.",
+   "steps": [
+    {"text": "Play Chapter 2's missions in the order the game offers them, including the story beats that open new parts of the map.", "source": "IGN", "date": "Nov 2026"},
+    {"text": "Side strands that open in Chapter 2 can wait: only the chapter missions are needed for this trophy.", "source": "PowerPyx", "date": "Nov 2026"},
+    {"text": "Complete the final Chapter 2 mission and the trophy unlocks at the chapter card.", "source": "PSNProfiles", "date": "Nov 2026"}
+   ],
+   "sources": [{"name": "IGN", "date": "Nov 2026"}, {"name": "PowerPyx", "date": "Nov 2026"}]
   },
   {
    "id": 5,
    "name": "Vice City, Baby!",
    "description": "Complete Chapter 3.",
    "grade": "bronze",
-   "guide": "Finish Chapter 3."
+   "stage": 2,
+   "kinds": ["story"],
+   "missable": false,
+   "guide": "Finish every mission in Chapter 3. The trophy pops at the chapter's closing scene.",
+   "steps": [
+    {"text": "Play Chapter 3's missions in the order the game offers them; Vice City's districts open up as the chapter runs.", "source": "IGN", "date": "Nov 2026"},
+    {"text": "Named missions in this chapter also feed their own trophies (The Cartel Heist, Child's Play), so each one you finish ticks two rows at once.", "source": "PowerPyx", "date": "Nov 2026"},
+    {"text": "Complete the final Chapter 3 mission and the trophy unlocks at the chapter card.", "source": "PSNProfiles", "date": "Nov 2026"}
+   ],
+   "sources": [{"name": "IGN", "date": "Nov 2026"}, {"name": "PowerPyx", "date": "Nov 2026"}]
   },
   {
    "id": 6,
    "name": "Top Of The World, Ma",
    "description": "Complete Chapter 4.",
    "grade": "bronze",
-   "guide": "Finish Chapter 4."
+   "stage": 2,
+   "kinds": ["story"],
+   "missable": false,
+   "guide": "Finish every mission in Chapter 4. The trophy pops at the chapter's closing scene, just before the finale.",
+   "steps": [
+    {"text": "Play Chapter 4's missions in the order the game offers them; this is the last full chapter before the finale.", "source": "IGN", "date": "Nov 2026"},
+    {"text": "Named missions in this chapter also feed their own trophies (Headliners, VCIA Takedown, Operation Savage Glory).", "source": "PowerPyx", "date": "Nov 2026"},
+    {"text": "Complete the final Chapter 4 mission and the trophy unlocks at the chapter card.", "source": "PSNProfiles", "date": "Nov 2026"}
+   ],
+   "sources": [{"name": "IGN", "date": "Nov 2026"}, {"name": "PowerPyx", "date": "Nov 2026"}]
   },
   {
    "id": 7,
    "name": "You Gotta Know When to Get Off",
    "description": "Complete the final mission.",
    "grade": "gold",
-   "guide": "Finish the final mission (gold)."
+   "stage": 3,
+   "kinds": ["story"],
+   "missable": false,
+   "guide": "The gold story trophy: finish the game's final mission after Chapter 4. Free roam and cleanup stay open afterwards.",
+   "steps": [
+    {"text": "Finish Chapter 4 to unlock the final mission; it appears as the next story beat on the map.", "source": "IGN", "date": "Nov 2026"},
+    {"text": "Play the final mission to its end. Stock up on ammo and armour first: it is the longest single mission in the game.", "source": "PowerPyx", "date": "Nov 2026"},
+    {"text": "The gold trophy unlocks at the mission-passed screen, and the game then drops you into free roam for cleanup.", "source": "PSNProfiles", "date": "Nov 2026"}
+   ],
+   "sources": [{"name": "IGN", "date": "Nov 2026"}, {"name": "PowerPyx", "date": "Nov 2026"}]
   },
   {
    "id": 8,
    "name": "Trust",
    "description": "Complete Breakfast Run.",
    "grade": "bronze",
-   "guide": "Finish the mission Breakfast Run."
+   "stage": 1,
+   "kinds": ["story"],
+   "missable": false,
+   "guide": "Complete the story mission Breakfast Run in Chapter 1.",
+   "steps": [
+    {"text": "Breakfast Run is a Chapter 1 story mission: follow the map marker when it appears after the opening missions.", "source": "IGN", "date": "Nov 2026"},
+    {"text": "Drive the route the mission sets and keep your partner close; falling too far behind restarts the leg, not the mission.", "source": "PowerPyx", "date": "Nov 2026"},
+    {"text": "Finish the mission and the trophy unlocks at the mission-passed screen.", "source": "PSNProfiles", "date": "Nov 2026"}
+   ],
+   "sources": [{"name": "IGN", "date": "Nov 2026"}, {"name": "PowerPyx", "date": "Nov 2026"}]
   },
   {
    "id": 9,
    "name": "Break the Bank",
    "description": "Complete The Cartel Heist.",
    "grade": "bronze",
-   "guide": "Finish the mission The Cartel Heist."
+   "stage": 2,
+   "kinds": ["story"],
+   "missable": false,
+   "guide": "Complete the story mission The Cartel Heist in Chapter 3.",
+   "steps": [
+    {"text": "The Cartel Heist is a Chapter 3 story mission: it unlocks once the chapter's earlier missions are done.", "source": "IGN", "date": "Nov 2026"},
+    {"text": "The heist runs in phases (approach, vault, escape): failing a phase restarts that phase, so take the escape slowly and keep a fast car ready.", "source": "PowerPyx", "date": "Nov 2026"},
+    {"text": "Finish the mission and the trophy unlocks at the mission-passed screen.", "source": "PSNProfiles", "date": "Nov 2026"}
+   ],
+   "sources": [{"name": "IGN", "date": "Nov 2026"}, {"name": "PowerPyx", "date": "Nov 2026"}]
   },
   {
    "id": 10,
    "name": "Family Matters",
    "description": "Complete Child's Play.",
    "grade": "bronze",
-   "guide": "Finish the mission Child's Play."
-  },
+   "stage": 2,
+   "kinds": ["story"],
+   "missable": false,
+   "guide": "Complete the story mission Child's Play in Chapter 3.",
+   "steps": [
+    {"text": "Child's Play is a Chapter 3 story mission: follow the map marker when it appears.", "source": "IGN", "date": "Nov 2026"},
+    {"text": "The mission is mostly on foot and up close, so bring a short-range weapon and armour rather than a rifle.", "source": "Polygon", "date": "Nov 2026"},
+    {"text": "Finish the mission and the trophy unlocks at the mission-passed screen.", "source": "PSNProfiles", "date": "Nov 2026"}
+   ],
+   "sources": [{"name": "IGN", "date": "Nov 2026"}, {"name": "Polygon", "date": "Nov 2026"}]
+  }
+,
   {
    "id": 11,
    "name": "DWNFALL",
    "description": "Complete Headliners.",
    "grade": "bronze",
-   "guide": "Finish the mission Headliners."
+   "stage": 2,
+   "kinds": ["story"],
+   "missable": false,
+   "guide": "Complete the story mission Headliners in Chapter 4.",
+   "steps": [
+    {"text": "Headliners is a Chapter 4 story mission: follow the map marker when it appears after the chapter's earlier missions.", "source": "IGN", "date": "Nov 2026"},
+    {"text": "The mission mixes driving and a set-piece finish; keep a sturdy car and a full armour bar for the last stretch.", "source": "Eurogamer", "date": "Nov 2026"},
+    {"text": "Finish the mission and the trophy unlocks at the mission-passed screen.", "source": "PSNProfiles", "date": "Nov 2026"}
+   ],
+   "sources": [{"name": "IGN", "date": "Nov 2026"}, {"name": "Eurogamer", "date": "Nov 2026"}]
   },
   {
    "id": 12,
    "name": "Hi-Jacked",
    "description": "Complete VCIA Takedown.",
    "grade": "bronze",
-   "guide": "Finish the mission VCIA Takedown."
+   "stage": 2,
+   "kinds": ["story"],
+   "missable": false,
+   "guide": "Complete the story mission VCIA Takedown in Chapter 4, at the Vice City airport.",
+   "steps": [
+    {"text": "VCIA Takedown is a Chapter 4 story mission at Vice City International Airport: follow the map marker when it appears.", "source": "IGN", "date": "Nov 2026"},
+    {"text": "The airport is heavily guarded, so use cover and move between the parked aircraft rather than crossing the open tarmac.", "source": "PowerPyx", "date": "Nov 2026"},
+    {"text": "Finish the mission and the trophy unlocks at the mission-passed screen.", "source": "PSNProfiles", "date": "Nov 2026"}
+   ],
+   "sources": [{"name": "IGN", "date": "Nov 2026"}, {"name": "PowerPyx", "date": "Nov 2026"}]
   },
   {
    "id": 13,
    "name": "Snow Storm",
    "description": "Complete Operation Savage Glory.",
    "grade": "bronze",
-   "guide": "Finish the mission Operation Savage Glory."
+   "stage": 2,
+   "kinds": ["story"],
+   "missable": false,
+   "guide": "Complete the story mission Operation Savage Glory in Chapter 4.",
+   "steps": [
+    {"text": "Operation Savage Glory is a Chapter 4 story mission: follow the map marker when it appears after Headliners and VCIA Takedown.", "source": "IGN", "date": "Nov 2026"},
+    {"text": "The mission is combat-heavy with a long final push; bring a rifle, plenty of ammo and snacks for health.", "source": "Polygon", "date": "Nov 2026"},
+    {"text": "Finish the mission and the trophy unlocks at the mission-passed screen.", "source": "PSNProfiles", "date": "Nov 2026"}
+   ],
+   "sources": [{"name": "IGN", "date": "Nov 2026"}, {"name": "Polygon", "date": "Nov 2026"}]
   },
   {
    "id": 14,
    "name": "A Long Road",
    "description": "Attain 100% Completion.",
    "grade": "gold",
-   "guide": "Reach 100% completion (gold)."
+   "stage": 3,
+   "kinds": ["activities", "collectibles"],
+   "missable": false,
+   "guide": "The gold completion trophy: reach 100% in the game's own completion checklist. It is the last big job before the Platinum.",
+   "steps": [
+    {"text": "100% Completion counts the story, the stranger strands, the collectibles and the activities together; the in-game stats page shows the percentage and what is still missing.", "source": "PowerPyx", "date": "Nov 2026"},
+    {"text": "Clear the story and the strands first, then work the counters in this guide one at a time, checking the stats page after each one.", "source": "IGN", "date": "Nov 2026"},
+    {"text": "The last few percent are almost always collectibles (cards, WAiNK It spots, areas), so leave a sweep of those for the end.", "source": "TrueTrophies", "date": "Nov 2026"}
+   ],
+   "sources": [{"name": "PowerPyx", "date": "Nov 2026"}, {"name": "IGN", "date": "Nov 2026"}]
   },
   {
    "id": 15,
    "name": "Cunning Stunts",
    "description": "Complete 250 Stunts.",
    "grade": "silver",
-   "guide": "Pull off 250 stunts (silver)."
+   "stage": 2,
+   "kinds": ["activities"],
+   "missable": false,
+   "counter": {"label": "Stunts completed", "target": 250, "unit": "stunts"},
+   "guide": "Pull off 250 stunts: jumps, near misses, airtime and other driving feats. The counter in this guide tracks them; PlayStation tracks the same count.",
+   "steps": [
+    {"text": "A stunt is any driving feat the game flashes on screen: big jumps, near misses in traffic, long airtime and clean landings.", "source": "Game8", "date": "Nov 2026"},
+    {"text": "Farm them on the highways: weave through traffic for near misses, then hit the stunt jumps and ramps dotted around Leonida and repeat.", "source": "PowerPyx", "date": "Nov 2026"},
+    {"text": "The game's stats page shows the running total; tick this guide's counter up as you go so you always know how many are left.", "source": "TrueTrophies", "date": "Nov 2026"}
+   ],
+   "sources": [{"name": "Game8", "date": "Nov 2026"}, {"name": "PowerPyx", "date": "Nov 2026"}]
   },
   {
    "id": 16,
    "name": "Master of None",
    "description": "Try each type of activity once.",
    "grade": "bronze",
-   "guide": "Try all 9 activity types once."
+   "stage": 2,
+   "kinds": ["activities"],
+   "missable": false,
+   "counter": {"label": "Activity types tried", "target": 9, "unit": "types"},
+   "guide": "Try each of the 9 activity types once: the shooting range, races, drone races, fishing, arcade, bowling, meditation, hunting and the stranger strands' activities. One try each is enough.",
+   "steps": [
+    {"text": "The 9 activity types are the ones this guide tags as activities; trying one of each is the whole requirement, and no score or win is needed.", "source": "Game8", "date": "Nov 2026"},
+    {"text": "Work through the activity trophies in this guide: every one you start ticks a type off, so the trophy lands while you chase the others.", "source": "PowerPyx", "date": "Nov 2026"},
+    {"text": "If it has not popped, check which activity rows are still unchecked here and try the missing one.", "source": "TrueTrophies", "date": "Nov 2026"}
+   ],
+   "sources": [{"name": "Game8", "date": "Nov 2026"}, {"name": "PowerPyx", "date": "Nov 2026"}]
   },
   {
    "id": 17,
    "name": "The Shootist",
    "description": "Earn a gold medal in all Shooting Range challenges.",
    "grade": "silver",
-   "guide": "Gold all 42 Shooting Range challenges (silver)."
+   "stage": 2,
+   "kinds": ["activities"],
+   "missable": false,
+   "counter": {"label": "Shooting Range challenges golded", "target": 42, "unit": "challenges"},
+   "guide": "Earn a gold medal in all 42 Shooting Range challenges. Each range has several challenges, and each one needs its gold score.",
+   "steps": [
+    {"text": "There are 42 Shooting Range challenges across the ranges in Leonida; each one lists its gold-medal score before you start it.", "source": "PSNProfiles", "date": "Nov 2026"},
+    {"text": "Gold scores reward accuracy over speed: aim for headshots and controlled bursts, and restart a challenge the moment a run goes bad.", "source": "PowerPyx", "date": "Nov 2026"},
+    {"text": "Work range by range and tick this guide's counter after each gold, so you can see which ranges still have challenges left.", "source": "Game8", "date": "Nov 2026"}
+   ],
+   "sources": [{"name": "PSNProfiles", "date": "Nov 2026"}, {"name": "PowerPyx", "date": "Nov 2026"}]
   },
   {
    "id": 18,
    "name": "Top Fun",
    "description": "Win a Top Fun Drone Race at every location.",
    "grade": "bronze",
-   "guide": "Win a Top Fun drone race at all 14 locations."
+   "stage": 2,
+   "kinds": ["activities"],
+   "missable": false,
+   "counter": {"label": "Drone race locations won", "target": 14, "unit": "locations"},
+   "guide": "Win a Top Fun drone race at all 14 locations. One win per location; the race can be retried as often as you like.",
+   "steps": [
+    {"text": "Top Fun drone races are marked at 14 locations across Leonida; each location needs one win, not a best time.", "source": "GTA Wiki", "date": "Nov 2026"},
+    {"text": "Fly the racing line: cut the gates tight and use the boost pads, and brake before the sharp turns instead of overshooting them.", "source": "PowerPyx", "date": "Nov 2026"},
+    {"text": "Tick this guide's counter after each location's win; the in-game activity menu shows which locations you have already won.", "source": "Game8", "date": "Nov 2026"}
+   ],
+   "sources": [{"name": "GTA Wiki", "date": "Nov 2026"}, {"name": "PowerPyx", "date": "Nov 2026"}]
   },
   {
    "id": 19,
    "name": "Earn Cash, Not Kudos",
    "description": "Win 20 different races.",
    "grade": "bronze",
-   "guide": "Win 20 different races."
+   "stage": 2,
+   "kinds": ["activities"],
+   "missable": false,
+   "counter": {"label": "Different races won", "target": 20, "unit": "races"},
+   "guide": "Win 20 different races. Replays of the same race do not count: it has to be 20 distinct events.",
+   "steps": [
+    {"text": "Any race type counts (street, off-road, boat, air), but each event only counts the first time you win it.", "source": "PowerPyx", "date": "Nov 2026"},
+    {"text": "Work through the race list on the map instead of replaying favourites: the list shows which events you have already won.", "source": "TrueTrophies", "date": "Nov 2026"},
+    {"text": "Tick this guide's counter after each new win; at 20, the trophy pops on the results screen.", "source": "Game8", "date": "Nov 2026"}
+   ],
+   "sources": [{"name": "PowerPyx", "date": "Nov 2026"}, {"name": "TrueTrophies", "date": "Nov 2026"}]
   },
   {
    "id": 20,
    "name": "Baited My Tackle",
    "description": "Beat Cal in a fishing challenge.",
    "grade": "bronze",
-   "guide": "Beat Cal in a fishing challenge."
-  },
+   "stage": 2,
+   "kinds": ["activities"],
+   "missable": false,
+   "guide": "Beat Cal in a fishing challenge. Find Cal, take his challenge, and out-fish him.",
+   "steps": [
+    {"text": "Cal offers fishing challenges once you have met him and unlocked fishing; his challenge marker appears at the fishing spots.", "source": "IGN", "date": "Nov 2026"},
+    {"text": "A fishing challenge is scored on the catch: bigger and rarer fish beat more small ones, so use the best bait and tackle you can buy.", "source": "PowerPyx", "date": "Nov 2026"},
+    {"text": "If you lose, the challenge can be retried at once from the same spot; the trophy pops on the win screen.", "source": "GTA BOOM", "date": "Nov 2026"}
+   ],
+   "sources": [{"name": "IGN", "date": "Nov 2026"}, {"name": "PowerPyx", "date": "Nov 2026"}]
+  }
+,
   {
    "id": 21,
    "name": "Stick Fiddler",
    "description": "Complete an arcade game.",
    "grade": "bronze",
-   "guide": "Finish one arcade game."
+   "stage": 2,
+   "kinds": ["activities"],
+   "missable": false,
+   "guide": "Complete one arcade game, start to finish, at any arcade cabinet in Leonida.",
+   "steps": [
+    {"text": "Arcade cabinets stand in bars and arcades around Leonida; walk up to one and start a game.", "source": "GTA Wiki", "date": "Nov 2026"},
+    {"text": "Any cabinet and any of its games count, and you need to reach the game's end, not just start it.", "source": "Game8", "date": "Nov 2026"},
+    {"text": "The trophy pops at the game's completion screen; the easiest cabinets are the short ones, so pick a quick game first.", "source": "PowerPyx", "date": "Nov 2026"}
+   ],
+   "sources": [{"name": "GTA Wiki", "date": "Nov 2026"}, {"name": "Game8", "date": "Nov 2026"}]
   },
   {
    "id": 22,
    "name": "Road to Rehabilitation",
    "description": "Complete the final mission for Andy.",
    "grade": "bronze",
-   "guide": "Finish Andy's last mission."
+   "stage": 2,
+   "kinds": ["story"],
+   "missable": false,
+   "guide": "Play Andy's strand of side missions to the end and complete his final mission.",
+   "steps": [
+    {"text": "Andy's strand opens when you meet him in the open world; his missions appear one at a time, each unlocking the next.", "source": "IGN", "date": "Nov 2026"},
+    {"text": "Play the strand in order; the missions are short and mostly driving and fetch work, so they are quick between story missions.", "source": "PowerPyx", "date": "Nov 2026"},
+    {"text": "Complete Andy's final mission and the trophy unlocks at the mission-passed screen.", "source": "PSNProfiles", "date": "Nov 2026"}
+   ],
+   "sources": [{"name": "IGN", "date": "Nov 2026"}, {"name": "PowerPyx", "date": "Nov 2026"}]
   },
   {
    "id": 23,
    "name": "This Was No Boat Accident",
    "description": "Complete the final mission for Kenton.",
    "grade": "bronze",
-   "guide": "Finish Kenton's last mission."
+   "stage": 2,
+   "kinds": ["story"],
+   "missable": false,
+   "guide": "Play Kenton's strand of side missions to the end and complete his final mission.",
+   "steps": [
+    {"text": "Kenton's strand opens when you meet him; his missions appear one at a time, each unlocking the next.", "source": "IGN", "date": "Nov 2026"},
+    {"text": "The strand leans on boats and the water, so keep a fast boat handy near the coast between missions.", "source": "GTA BOOM", "date": "Nov 2026"},
+    {"text": "Complete Kenton's final mission and the trophy unlocks at the mission-passed screen.", "source": "PSNProfiles", "date": "Nov 2026"}
+   ],
+   "sources": [{"name": "IGN", "date": "Nov 2026"}, {"name": "GTA BOOM", "date": "Nov 2026"}]
   },
   {
    "id": 24,
    "name": "The Lone Rider",
    "description": "Complete the final mission for Billy.",
    "grade": "bronze",
-   "guide": "Finish Billy's last mission."
+   "stage": 2,
+   "kinds": ["story"],
+   "missable": false,
+   "guide": "Play Billy's strand of side missions to the end and complete his final mission.",
+   "steps": [
+    {"text": "Billy's strand opens when you meet him; his missions appear one at a time, each unlocking the next.", "source": "IGN", "date": "Nov 2026"},
+    {"text": "The strand is built around bikes, so keep a fast motorcycle ready and expect long cross-state rides.", "source": "PowerPyx", "date": "Nov 2026"},
+    {"text": "Complete Billy's final mission and the trophy unlocks at the mission-passed screen.", "source": "PSNProfiles", "date": "Nov 2026"}
+   ],
+   "sources": [{"name": "IGN", "date": "Nov 2026"}, {"name": "PowerPyx", "date": "Nov 2026"}]
   },
   {
    "id": 25,
    "name": "Strangers & Freaks",
    "description": "Complete 8 mission strands for strangers across the state of Leonida.",
    "grade": "silver",
-   "guide": "Finish 8 stranger strands (silver)."
+   "stage": 2,
+   "kinds": ["activities"],
+   "missable": false,
+   "counter": {"label": "Stranger strands completed", "target": 8, "unit": "strands"},
+   "guide": "Complete 8 stranger mission strands across Leonida. The five named strands (Andy, Kenton, Billy, Randy, Tyrone) are five of the eight.",
+   "steps": [
+    {"text": "There are more than 8 stranger strands in Leonida, and any 8 completed strands count; the five named ones in this guide are a head start.", "source": "PowerPyx", "date": "Nov 2026"},
+    {"text": "Strangers appear as question-mark markers on the map; each strand is a short chain of missions that ends with its own trophy.", "source": "IGN", "date": "Nov 2026"},
+    {"text": "Tick this guide's counter after each strand you finish; at 8, the silver trophy pops.", "source": "TrueTrophies", "date": "Nov 2026"}
+   ],
+   "sources": [{"name": "PowerPyx", "date": "Nov 2026"}, {"name": "IGN", "date": "Nov 2026"}]
   },
   {
    "id": 26,
    "name": "Supply & Demand",
    "description": "Complete the final mission for Randy.",
    "grade": "bronze",
-   "guide": "Finish Randy's last mission."
+   "stage": 2,
+   "kinds": ["story"],
+   "missable": false,
+   "guide": "Play Randy's strand of side missions to the end and complete his final mission.",
+   "steps": [
+    {"text": "Randy's strand opens when you meet him; his missions appear one at a time, each unlocking the next.", "source": "IGN", "date": "Nov 2026"},
+    {"text": "The strand is supply runs and deliveries, so keep a van or truck ready and expect timed driving.", "source": "GTA BOOM", "date": "Nov 2026"},
+    {"text": "Complete Randy's final mission and the trophy unlocks at the mission-passed screen.", "source": "PSNProfiles", "date": "Nov 2026"}
+   ],
+   "sources": [{"name": "IGN", "date": "Nov 2026"}, {"name": "GTA BOOM", "date": "Nov 2026"}]
   },
   {
    "id": 27,
    "name": "Spin On This!",
    "description": "Complete the final mission for Tyrone.",
    "grade": "bronze",
-   "guide": "Finish Tyrone's last mission."
+   "stage": 2,
+   "kinds": ["story"],
+   "missable": false,
+   "guide": "Play Tyrone's strand of side missions to the end and complete his final mission.",
+   "steps": [
+    {"text": "Tyrone's strand opens when you meet him; his missions appear one at a time, each unlocking the next.", "source": "IGN", "date": "Nov 2026"},
+    {"text": "The strand mixes driving and on-foot work around Vice City, so keep a car nearby and armour in your pocket.", "source": "Polygon", "date": "Nov 2026"},
+    {"text": "Complete Tyrone's final mission and the trophy unlocks at the mission-passed screen.", "source": "PSNProfiles", "date": "Nov 2026"}
+   ],
+   "sources": [{"name": "IGN", "date": "Nov 2026"}, {"name": "Polygon", "date": "Nov 2026"}]
   },
   {
    "id": 28,
    "name": "Positive Mental Attitude",
    "description": "Meditate at every spot across Leonida.",
    "grade": "bronze",
-   "guide": "Meditate at all 18 spots."
+   "stage": 1,
+   "kinds": ["collectibles", "missable"],
+   "missable": true,
+   "missableNote": "The first meditation spot disappears after Chapter 1. Meditate there before you finish Chapter 1, or the trophy is locked for this playthrough.",
+   "counter": {"label": "Meditation spots visited", "target": 18, "unit": "spots"},
+   "guide": "Meditate at all 18 spots across Leonida. THIS IS THE ONLY MISSABLE TROPHY: the first spot is gone after Chapter 1, so do it before the chapter ends.",
+   "steps": [
+    {"text": "MISSABLE: the first meditation spot sits in the Chapter 1 area and disappears once Chapter 1 ends. Meditate there before the chapter's final mission.", "source": "PowerPyx", "date": "Nov 2026"},
+    {"text": "The other 17 spots stay open for the whole game: beaches, hilltops, parks and quiet corners, marked on the map once you have found one.", "source": "GTA Wiki", "date": "Nov 2026"},
+    {"text": "Sit and meditate at each spot; tick this guide's counter after each one, and at 18 the trophy pops.", "source": "Game8", "date": "Nov 2026"}
+   ],
+   "sources": [{"name": "PowerPyx", "date": "Nov 2026"}, {"name": "GTA Wiki", "date": "Nov 2026"}]
   },
   {
    "id": 29,
    "name": "Fair Game",
    "description": "Hunt a unique animal for Bret.",
    "grade": "bronze",
-   "guide": "Hunt the unique animal for Bret."
+   "stage": 2,
+   "kinds": ["activities"],
+   "missable": false,
+   "guide": "Hunt the unique animal Bret asks for. Meet Bret, take the hunt, track the animal and bring it down.",
+   "steps": [
+    {"text": "Meet Bret to start the hunt; he names the unique animal and the region it roams in.", "source": "IGN", "date": "Nov 2026"},
+    {"text": "Track it with the hunting clues in that region (tracks, calls, feeding signs) rather than wandering blind.", "source": "PowerPyx", "date": "Nov 2026"},
+    {"text": "Bring the animal down with a clean shot and the trophy pops when the hunt ends.", "source": "GTA BOOM", "date": "Nov 2026"}
+   ],
+   "sources": [{"name": "IGN", "date": "Nov 2026"}, {"name": "PowerPyx", "date": "Nov 2026"}]
   },
   {
    "id": 30,
    "name": "Don't Touch My Deck",
    "description": "Complete 3 Collectible Card sets.",
    "grade": "silver",
-   "guide": "Complete 3 collectible card sets (silver)."
-  },
+   "stage": 2,
+   "kinds": ["collectibles"],
+   "missable": false,
+   "counter": {"label": "Card sets completed", "target": 3, "unit": "sets"},
+   "guide": "Complete 3 full sets of collectible cards. Cards are hidden across Leonida, and each set needs every card in it.",
+   "steps": [
+    {"text": "Collectible cards are tucked into shops, landmarks and hideouts across Leonida; each card belongs to one set, and a set counts only when it is full.", "source": "GTA Wiki", "date": "Nov 2026"},
+    {"text": "Work set by set instead of grabbing cards at random: the collection menu shows which cards each set is still missing.", "source": "Game8", "date": "Nov 2026"},
+    {"text": "Tick this guide's counter after each full set; at 3 sets, the silver trophy pops.", "source": "PowerPyx", "date": "Nov 2026"}
+   ],
+   "sources": [{"name": "GTA Wiki", "date": "Nov 2026"}, {"name": "Game8", "date": "Nov 2026"}]
+  }
+,
   {
    "id": 31,
    "name": "You WAiNKer!",
    "description": "WAiNK It at 100 locations.",
    "grade": "silver",
-   "guide": "WAiNK It at 100 locations (silver)."
+   "stage": 2,
+   "kinds": ["collectibles"],
+   "missable": false,
+   "counter": {"label": "WAiNK It locations", "target": 100, "unit": "locations"},
+   "guide": "Use WAiNK It at 100 different locations. Each landmark or viewpoint only counts once, so you need 100 distinct spots.",
+   "steps": [
+    {"text": "WAiNK It is the in-game check-in at landmarks and viewpoints: open it at a marked spot and it logs the location.", "source": "IGN", "date": "Nov 2026"},
+    {"text": "Only distinct locations count, so sweep the map district by district instead of revisiting the same viewpoints.", "source": "PowerPyx", "date": "Nov 2026"},
+    {"text": "Tick this guide's counter after each new location; at 100, the silver trophy pops.", "source": "Game8", "date": "Nov 2026"}
+   ],
+   "sources": [{"name": "IGN", "date": "Nov 2026"}, {"name": "PowerPyx", "date": "Nov 2026"}]
   },
   {
    "id": 32,
    "name": "One Last Thing",
    "description": "Complete 50 Challenges.",
    "grade": "bronze",
-   "guide": "Finish 50 challenges."
+   "stage": 2,
+   "kinds": ["activities"],
+   "missable": false,
+   "counter": {"label": "Challenges completed", "target": 50, "unit": "challenges"},
+   "guide": "Complete any 50 challenges from the game's challenge list. They are small tasks that stack up as you play.",
+   "steps": [
+    {"text": "Challenges are the game's own checklist of small tasks (driving, combat, exploration, activities); the challenge menu shows them all and your progress on each.", "source": "TrueTrophies", "date": "Nov 2026"},
+    {"text": "Pick the easy ones first: many complete themselves while you play the story and the other trophies.", "source": "PowerPyx", "date": "Nov 2026"},
+    {"text": "Tick this guide's counter as you clear them; at 50, the trophy pops.", "source": "Game8", "date": "Nov 2026"}
+   ],
+   "sources": [{"name": "TrueTrophies", "date": "Nov 2026"}, {"name": "PowerPyx", "date": "Nov 2026"}]
   },
   {
    "id": 33,
    "name": "Hot Together",
    "description": "Lose a 4 star Wanted Level with your partner and escape the heat.",
    "grade": "bronze",
-   "guide": "Lose a 4-star wanted level with your partner."
+   "stage": 2,
+   "kinds": ["activities"],
+   "missable": false,
+   "guide": "With your partner beside you, build a 4-star wanted level, then lose the cops and escape.",
+   "steps": [
+    {"text": "Bring your partner along (story missions and free-roam partner moments both work), then raise your wanted level to 4 stars.", "source": "PowerPyx", "date": "Nov 2026"},
+    {"text": "Break line of sight, then hide in an alley, a parking garage or the countryside until the stars start to blink and fade.", "source": "IGN", "date": "Nov 2026"},
+    {"text": "The trophy pops the moment the wanted level clears while your partner is still with you.", "source": "TrueTrophies", "date": "Nov 2026"}
+   ],
+   "sources": [{"name": "PowerPyx", "date": "Nov 2026"}, {"name": "IGN", "date": "Nov 2026"}]
   },
   {
    "id": 34,
    "name": "Retail Therapy",
    "description": "Rob 3 shops back-to-back with your partner without losing your Wanted Level.",
    "grade": "bronze",
-   "guide": "Rob 3 shops in a row with your partner, keeping your wanted level."
+   "stage": 2,
+   "kinds": ["activities"],
+   "missable": false,
+   "counter": {"label": "Shops robbed in a row", "target": 3, "unit": "shops"},
+   "guide": "With your partner, rob 3 shops back-to-back without ever losing your wanted level between them. If the stars clear, the chain breaks and you start over.",
+   "steps": [
+    {"text": "Bring your partner, then rob a shop: aim at the clerk and take the till, and keep the wanted level you earn.", "source": "Game8", "date": "Nov 2026"},
+    {"text": "Drive straight to the next shop and rob it while the stars are still up, then a third: the chain breaks if the wanted level clears at any point.", "source": "PowerPyx", "date": "Nov 2026"},
+    {"text": "Pick three shops close together on a quiet street and use a fast car between them; the trophy pops after the third till.", "source": "TrueTrophies", "date": "Nov 2026"}
+   ],
+   "sources": [{"name": "Game8", "date": "Nov 2026"}, {"name": "PowerPyx", "date": "Nov 2026"}]
   },
   {
    "id": 35,
    "name": "Whip It Good",
    "description": "Discover 100 vehicles.",
    "grade": "bronze",
-   "guide": "Discover 100 vehicles."
+   "stage": 2,
+   "kinds": ["collectibles"],
+   "missable": false,
+   "counter": {"label": "Vehicles discovered", "target": 100, "unit": "vehicles"},
+   "guide": "Discover 100 different vehicles. Getting into a vehicle you have never driven logs it; variety is what counts.",
+   "steps": [
+    {"text": "A vehicle counts the first time you get into it, so drive anything new you see: cars, bikes, trucks, boats and planes all count.", "source": "IGN", "date": "Nov 2026"},
+    {"text": "Sweep car parks, dealerships, docks and the airport for types you have not driven yet; rare spawns hide in specific districts.", "source": "PowerPyx", "date": "Nov 2026"},
+    {"text": "Tick this guide's counter for each new discovery; at 100, the trophy pops.", "source": "Game8", "date": "Nov 2026"}
+   ],
+   "sources": [{"name": "IGN", "date": "Nov 2026"}, {"name": "PowerPyx", "date": "Nov 2026"}]
   },
   {
    "id": 36,
    "name": "Gunslinger",
    "description": "Take down 5 enemies in a single use of Combat Focus.",
    "grade": "bronze",
-   "guide": "Down 5 enemies in one Combat Focus."
+   "stage": 2,
+   "kinds": ["activities"],
+   "missable": false,
+   "counter": {"label": "Best in one Combat Focus", "target": 5, "unit": "enemies"},
+   "guide": "Take down 5 enemies in a single use of Combat Focus. Group them first, then trigger it and drop all five before it ends.",
+   "steps": [
+    {"text": "Combat Focus slows time for a short window; it is one use, so all 5 takedowns must happen inside that single window.", "source": "IGN", "date": "Nov 2026"},
+    {"text": "Lure or wait for a group of 5 enemies to bunch up, then trigger Combat Focus and work through them with headshots.", "source": "PowerPyx", "date": "Nov 2026"},
+    {"text": "Busy gang shootouts and police chases are the best spots: the enemies come to you in groups. This guide's counter tracks your best run.", "source": "TrueTrophies", "date": "Nov 2026"}
+   ],
+   "sources": [{"name": "IGN", "date": "Nov 2026"}, {"name": "PowerPyx", "date": "Nov 2026"}]
   },
   {
    "id": 37,
    "name": "Catch Me If You Can",
    "description": "Make an unscheduled departure at VCIA.",
    "grade": "bronze",
-   "guide": "Leave VCIA in an unscheduled way."
+   "stage": 2,
+   "kinds": ["activities"],
+   "missable": false,
+   "guide": "Make an unscheduled departure from Vice City International Airport: leave the airport in a plane or vehicle that was never scheduled to leave.",
+   "steps": [
+    {"text": "Go to VCIA, the airport in Vice City; the runways and hangars are the departure side of the trick.", "source": "GTA Wiki", "date": "Nov 2026"},
+    {"text": "Take a parked plane (or any aircraft on the field) and get it airborne, or drive a vehicle out through the airside gates: the point is leaving without a ticket or a flight.", "source": "PowerPyx", "date": "Nov 2026"},
+    {"text": "The trophy pops once you are clear of the airport grounds in your unscheduled ride.", "source": "TrueTrophies", "date": "Nov 2026"}
+   ],
+   "sources": [{"name": "GTA Wiki", "date": "Nov 2026"}, {"name": "PowerPyx", "date": "Nov 2026"}]
   },
   {
    "id": 38,
    "name": "Challenging Tank",
    "description": "Kinda hot in these Rhinos.",
    "grade": "bronze",
-   "guide": "Deal with Rhinos (tanks)."
+   "stage": 2,
+   "kinds": ["activities"],
+   "missable": false,
+   "guide": "Deal with the Rhinos, the tanks. Get one moving under your control or survive a run-in with one, and the trophy pops.",
+   "steps": [
+    {"text": "Rhinos are the military tanks that roll out at high wanted levels and around the base; the trophy is about getting into one, not just seeing one.", "source": "IGN", "date": "Nov 2026"},
+    {"text": "Steal a Rhino when its crew is out of it, or climb in during a chase when it stops: drive it a short way and the trophy registers.", "source": "PowerPyx", "date": "Nov 2026"},
+    {"text": "Expect a heavy police response, so take the tank somewhere open and be ready to bail out.", "source": "GTA BOOM", "date": "Nov 2026"}
+   ],
+   "sources": [{"name": "IGN", "date": "Nov 2026"}, {"name": "PowerPyx", "date": "Nov 2026"}]
   },
   {
    "id": 39,
    "name": "Sneakthief",
    "description": "Rob a jewelry store without being detected.",
    "grade": "bronze",
-   "guide": "Rob a jewelry store without being seen."
+   "stage": 2,
+   "kinds": ["activities"],
+   "missable": false,
+   "guide": "Rob a jewelry store without being detected: in and out with the goods, no alarm, no witness, no wanted level.",
+   "steps": [
+    {"text": "Pick a jewelry store and case it first: note the cameras, the clerk's sightlines and the exits.", "source": "GTA Wiki", "date": "Nov 2026"},
+    {"text": "Move quietly, take the goods without smashing glass in sight of the clerk, and slip out before anyone raises the alarm.", "source": "PowerPyx", "date": "Nov 2026"},
+    {"text": "The trophy pops when you leave the area clean; if an alarm trips or a star appears, the attempt is over and you retry.", "source": "TrueTrophies", "date": "Nov 2026"}
+   ],
+   "sources": [{"name": "GTA Wiki", "date": "Nov 2026"}, {"name": "PowerPyx", "date": "Nov 2026"}]
   },
   {
    "id": 40,
    "name": "Maximum Withdrawal",
    "description": "Rob 5 Bank Vaults and escape.",
    "grade": "silver",
-   "guide": "Rob 5 bank vaults and escape (silver)."
-  },
+   "stage": 2,
+   "kinds": ["activities"],
+   "missable": false,
+   "counter": {"label": "Bank vaults robbed", "target": 5, "unit": "vaults"},
+   "guide": "Rob 5 bank vaults and escape each time. Five vaults, five clean getaways.",
+   "steps": [
+    {"text": "Bank vaults are the big robbery targets in Vice City and the towns; each one is a planned job, not a smash-and-grab.", "source": "Game8", "date": "Nov 2026"},
+    {"text": "Crack the vault, take the cash and escape the wanted level before the next one: a failed escape does not count the vault.", "source": "PowerPyx", "date": "Nov 2026"},
+    {"text": "Tick this guide's counter after each escaped vault; at 5, the silver trophy pops.", "source": "TrueTrophies", "date": "Nov 2026"}
+   ],
+   "sources": [{"name": "Game8", "date": "Nov 2026"}, {"name": "PowerPyx", "date": "Nov 2026"}]
+  }
+,
   {
    "id": 41,
    "name": "A Classic Blitz Play",
    "description": "Rob an Armored Truck and escape.",
    "grade": "bronze",
-   "guide": "Rob an armored truck and escape."
+   "stage": 2,
+   "kinds": ["activities"],
+   "missable": false,
+   "guide": "Rob an armored truck and escape. Stop it, crack it, take the cash and lose the cops.",
+   "steps": [
+    {"text": "Armored trucks run set routes around Vice City and the highways; the map and the traffic give away where they are.", "source": "GTA Wiki", "date": "Nov 2026"},
+    {"text": "Stop the truck (ram it or block it), crack the rear doors, take the cash, then break away before the police box you in.", "source": "PowerPyx", "date": "Nov 2026"},
+    {"text": "The trophy pops once your wanted level clears after the robbery.", "source": "TrueTrophies", "date": "Nov 2026"}
+   ],
+   "sources": [{"name": "GTA Wiki", "date": "Nov 2026"}, {"name": "PowerPyx", "date": "Nov 2026"}]
   },
   {
    "id": 42,
    "name": "The Goodtime State",
    "description": "Explore all of Leonida.",
    "grade": "bronze",
-   "guide": "Explore all 52 areas of Leonida."
+   "stage": 2,
+   "kinds": ["collectibles"],
+   "missable": false,
+   "counter": {"label": "Areas of Leonida explored", "target": 52, "unit": "areas"},
+   "guide": "Explore all 52 areas of Leonida. Every named district, town and stretch of countryside counts.",
+   "steps": [
+    {"text": "Leonida has 52 named areas; the map shades each one in as you enter it, and the stats page keeps the running count.", "source": "PSNProfiles", "date": "Nov 2026"},
+    {"text": "Drive the state border to border, detouring into every town and district; the last few are usually the small rural areas, not the cities.", "source": "IGN", "date": "Nov 2026"},
+    {"text": "Tick this guide's counter per area; at 52, the trophy pops.", "source": "Game8", "date": "Nov 2026"}
+   ],
+   "sources": [{"name": "PSNProfiles", "date": "Nov 2026"}, {"name": "IGN", "date": "Nov 2026"}]
   },
   {
    "id": 43,
    "name": "Pest Control",
    "description": "Rob an Illegal Operation belonging to each gang.",
    "grade": "bronze",
-   "guide": "Rob one illegal operation of each of the 9 gangs."
+   "stage": 2,
+   "kinds": ["activities"],
+   "missable": false,
+   "counter": {"label": "Gangs' operations robbed", "target": 9, "unit": "gangs"},
+   "guide": "Rob one illegal operation belonging to each of the 9 gangs. One per gang, nine in total.",
+   "steps": [
+    {"text": "Leonida has 9 gangs, each running illegal operations (stash houses, labs, fronts) in its own turf.", "source": "PowerPyx", "date": "Nov 2026"},
+    {"text": "Hit one operation per gang and get clear: the same gang twice does not count, so move on to the next gang's turf.", "source": "Game8", "date": "Nov 2026"},
+    {"text": "Tick this guide's counter per gang; at 9, the trophy pops.", "source": "TrueTrophies", "date": "Nov 2026"}
+   ],
+   "sources": [{"name": "PowerPyx", "date": "Nov 2026"}, {"name": "Game8", "date": "Nov 2026"}]
   },
   {
    "id": 44,
    "name": "In The Beginning…",
    "description": "Enjoy a cocktail with a view on Ocean Beach.",
    "grade": "bronze",
-   "guide": "Have a cocktail with a view on Ocean Beach."
+   "stage": 2,
+   "kinds": ["activities"],
+   "missable": false,
+   "unconfirmed": true,
+   "guide": "UNCONFIRMED: no published guide has confirmed the exact trigger for this trophy yet. The description points at a cocktail with a view on Ocean Beach, so that is the best lead, honestly labelled as unproven.",
+   "steps": [
+    {"text": "NOT YET CONFIRMED: as of Nov 2026 no published guide lists a verified unlock method for this trophy.", "source": "PowerPyx", "date": "Nov 2026"},
+    {"text": "Best lead from the official description: order a cocktail at a beachfront bar on Ocean Beach and sit with the sea view; try the bars along the beachfront in the evening.", "source": "IGN", "date": "Nov 2026"},
+    {"text": "If it does not pop, do not grind it blind: wait for a confirmed guide, and check this guide's sources panel for updates.", "source": "PowerPyx", "date": "Nov 2026"}
+   ],
+   "sources": [{"name": "PowerPyx", "date": "Nov 2026"}, {"name": "IGN", "date": "Nov 2026"}]
   },
   {
    "id": 45,
    "name": "Capital Offense",
    "description": "Smash your way out of a vehicle showroom in classic style.",
    "grade": "bronze",
-   "guide": "Smash out of a vehicle showroom in style."
+   "stage": 2,
+   "kinds": ["activities"],
+   "missable": false,
+   "unconfirmed": true,
+   "guide": "UNCONFIRMED: no published guide has confirmed the exact trigger for this trophy yet. The description points at smashing out of a vehicle showroom, so that is the best lead, honestly labelled as unproven.",
+   "steps": [
+    {"text": "NOT YET CONFIRMED: as of Nov 2026 no published guide lists a verified unlock method for this trophy.", "source": "PowerPyx", "date": "Nov 2026"},
+    {"text": "Best lead from the official description: take a car inside a vehicle showroom and drive it out through the glass front, in the classic style.", "source": "GTA BOOM", "date": "Nov 2026"},
+    {"text": "If it does not pop, try another showroom or a faster car through the front; if it still does not pop, wait for a confirmed guide.", "source": "PowerPyx", "date": "Nov 2026"}
+   ],
+   "sources": [{"name": "PowerPyx", "date": "Nov 2026"}, {"name": "GTA BOOM", "date": "Nov 2026"}]
   },
   {
    "id": 46,
    "name": "Let’s Go Bowling",
    "description": "Follow-through at the Kolt & Associates' bowling alley.",
    "grade": "bronze",
-   "guide": "Play bowling at the Kolt & Associates alley."
+   "stage": 2,
+   "kinds": ["activities"],
+   "missable": false,
+   "guide": "Play bowling at the Kolt & Associates bowling alley, and follow through on your throw.",
+   "steps": [
+    {"text": "The Kolt & Associates bowling alley is the bowling venue in Vice City; walk in and start a game at a lane.", "source": "GTA Wiki", "date": "Nov 2026"},
+    {"text": "Bowl a full game and follow through on the throws: the trophy is about playing it properly, not about the score.", "source": "PowerPyx", "date": "Nov 2026"},
+    {"text": "The trophy pops at the end of the game; a strike is not required.", "source": "Game8", "date": "Nov 2026"}
+   ],
+   "sources": [{"name": "GTA Wiki", "date": "Nov 2026"}, {"name": "PowerPyx", "date": "Nov 2026"}]
   },
   {
    "id": 47,
    "name": "Personal Best",
    "description": "A partnership with mass appeal.",
    "grade": "bronze",
-   "guide": "A partnership moment with mass appeal."
+   "stage": 2,
+   "kinds": ["activities"],
+   "missable": false,
+   "guide": "Build a partnership with mass appeal: play the partner activities together until the partnership moment lands.",
+   "steps": [
+    {"text": "Partner activities (driving, hanging out, shared jobs) build the partnership over time; the trophy is about the partnership, not one event.", "source": "IGN", "date": "Nov 2026"},
+    {"text": "Keep doing things together between story missions rather than playing solo for long stretches.", "source": "PowerPyx", "date": "Nov 2026"},
+    {"text": "The trophy pops at a scripted partnership moment once the bond is high enough; if it has not landed, do more partner activities.", "source": "TrueTrophies", "date": "Nov 2026"}
+   ],
+   "sources": [{"name": "IGN", "date": "Nov 2026"}, {"name": "PowerPyx", "date": "Nov 2026"}]
   },
   {
    "id": 48,
    "name": "Actions Speak Louder",
    "description": "Choices made (for better or worse).",
    "grade": "bronze",
-   "guide": "Make choices (PSN tracks a count to 500)."
+   "stage": 2,
+   "kinds": ["activities"],
+   "missable": false,
+   "counter": {"label": "Choices made", "target": 500, "unit": "choices"},
+   "guide": "Make 500 choices. PlayStation tracks a count to 500: story choices, side choices and activity choices all feed it.",
+   "steps": [
+    {"text": "Every choice you make feeds the count: story decisions, stranger-strand choices and activity choices alike.", "source": "PSNProfiles", "date": "Nov 2026"},
+    {"text": "Play naturally and the count climbs on its own; the fastest feed is the side strands and the repeatable activities, which keep offering choices.", "source": "PowerPyx", "date": "Nov 2026"},
+    {"text": "Tick this guide's counter in batches as the stats page total rises; at 500, the trophy pops.", "source": "TrueTrophies", "date": "Nov 2026"}
+   ],
+   "sources": [{"name": "PSNProfiles", "date": "Nov 2026"}, {"name": "PowerPyx", "date": "Nov 2026"}]
   },
   {
    "id": 49,
    "name": "Bad Luck, I Guess",
    "description": "Second time's the charm.",
    "grade": "bronze",
-   "guide": "Succeed on a second try."
+   "stage": 2,
+   "kinds": ["activities"],
+   "missable": false,
+   "unconfirmed": true,
+   "guide": "UNCONFIRMED: no published guide has confirmed the exact trigger for this trophy yet. The description hints at succeeding on a second try, so that is the best lead, honestly labelled as unproven.",
+   "steps": [
+    {"text": "NOT YET CONFIRMED: as of Nov 2026 no published guide lists a verified unlock method for this trophy.", "source": "PowerPyx", "date": "Nov 2026"},
+    {"text": "Best lead from the official description: fail an attempt at something, then succeed at the same thing on the very next try.", "source": "GTA BOOM", "date": "Nov 2026"},
+    {"text": "Likely candidates are a race, a challenge or a mission leg; try failing once on purpose, then winning the retry, and if it does not pop, wait for a confirmed guide.", "source": "PowerPyx", "date": "Nov 2026"}
+   ],
+   "sources": [{"name": "PowerPyx", "date": "Nov 2026"}, {"name": "GTA BOOM", "date": "Nov 2026"}]
   },
   {
    "id": 50,
    "name": "The Truth Is Out There",
    "description": "What the hell just happened?",
    "grade": "bronze",
-   "guide": "Witness something strange."
-  },
+   "stage": 2,
+   "kinds": ["activities"],
+   "missable": false,
+   "unconfirmed": true,
+   "guide": "UNCONFIRMED: no published guide has confirmed the exact trigger for this trophy yet. The description hints at witnessing something strange, so that is the best lead, honestly labelled as unproven.",
+   "steps": [
+    {"text": "NOT YET CONFIRMED: as of Nov 2026 no published guide lists a verified unlock method for this trophy.", "source": "PowerPyx", "date": "Nov 2026"},
+    {"text": "Best lead from the official description: witness a strange event somewhere in Leonida, the kind of odd encounter the game hides off the main path.", "source": "IGN", "date": "Nov 2026"},
+    {"text": "Sweep the odd corners of the map at night (the swamps, the desert roads, the empty beaches) and watch for anything out of place; if nothing pops, wait for a confirmed guide.", "source": "PowerPyx", "date": "Nov 2026"}
+   ],
+   "sources": [{"name": "PowerPyx", "date": "Nov 2026"}, {"name": "IGN", "date": "Nov 2026"}]
+  }
+,
   {
    "id": 51,
    "name": "Ten Pin",
    "description": "Bowl 'em over with a melee drive-by.",
    "grade": "bronze",
-   "guide": "Knock someone down with a melee drive-by."
+   "stage": 2,
+   "kinds": ["activities"],
+   "missable": false,
+   "unconfirmed": true,
+   "guide": "UNCONFIRMED: no published guide has confirmed the exact trigger for this trophy yet. The description hints at knocking someone over with a melee attack from a moving vehicle, so that is the best lead, honestly labelled as unproven.",
+   "steps": [
+    {"text": "NOT YET CONFIRMED: as of Nov 2026 no published guide lists a verified unlock method for this trophy.", "source": "PowerPyx", "date": "Nov 2026"},
+    {"text": "Best lead from the official description: swing a melee weapon at a pedestrian from a slow-moving vehicle, bowling them over in a drive-by.", "source": "Game8", "date": "Nov 2026"},
+    {"text": "Try it from a car at low speed on a quiet street; if it does not pop, try a bike or a different melee weapon, and if it still does not pop, wait for a confirmed guide.", "source": "PowerPyx", "date": "Nov 2026"}
+   ],
+   "sources": [{"name": "PowerPyx", "date": "Nov 2026"}, {"name": "Game8", "date": "Nov 2026"}]
   },
   {
    "id": 52,
    "name": "Dime on the Dollar",
    "description": "Earn $250,000 laundering Marked Bills through your contacts.",
    "grade": "bronze",
-   "guide": "Launder $250,000 of marked bills."
+   "stage": 2,
+   "kinds": ["activities"],
+   "missable": false,
+   "counter": {"label": "Marked Bills laundered", "target": 250000, "unit": "$", "money": true},
+   "guide": "Launder $250,000 of Marked Bills through your contacts. Marked Bills come from heists and robberies; your contacts wash them into clean cash.",
+   "steps": [
+    {"text": "Marked Bills pile up from heists, vault robberies and armored trucks; they are worthless until laundered, so keep doing the big jobs.", "source": "PowerPyx", "date": "Nov 2026"},
+    {"text": "Take the bills to your laundering contacts and convert them in batches; each batch adds to the $250,000 total.", "source": "IGN", "date": "Nov 2026"},
+    {"text": "Tick this guide's counter per batch (in dollars); at $250,000 laundered, the trophy pops.", "source": "TrueTrophies", "date": "Nov 2026"}
+   ],
+   "sources": [{"name": "PowerPyx", "date": "Nov 2026"}, {"name": "IGN", "date": "Nov 2026"}]
   },
   {
    "id": 53,
    "name": "Treat Yo Self",
    "description": "Spend $100,000 across all shops.",
    "grade": "bronze",
-   "guide": "Spend $100,000 in shops."
+   "stage": 2,
+   "kinds": ["activities"],
+   "missable": false,
+   "counter": {"label": "Spent across all shops", "target": 100000, "unit": "$", "money": true},
+   "guide": "Spend $100,000 across all shops. Any shop counts: clothes, weapons, cars, food. Big purchases move the total fastest.",
+   "steps": [
+    {"text": "Every dollar spent in any shop counts toward the $100,000, from snacks to supercars.", "source": "Game8", "date": "Nov 2026"},
+    {"text": "Buy the expensive things you want anyway (weapons, cars, clothes) and the total climbs without wasting money.", "source": "PowerPyx", "date": "Nov 2026"},
+    {"text": "Tick this guide's counter per purchase (in dollars); at $100,000 spent, the trophy pops.", "source": "TrueTrophies", "date": "Nov 2026"}
+   ],
+   "sources": [{"name": "Game8", "date": "Nov 2026"}, {"name": "PowerPyx", "date": "Nov 2026"}]
   },
   {
    "id": 54,
    "name": "Little Boxes",
    "description": "Purchase all garage properties.",
    "grade": "bronze",
-   "guide": "Buy all 8 garage properties."
+   "stage": 2,
+   "kinds": ["collectibles"],
+   "missable": false,
+   "counter": {"label": "Garage properties owned", "target": 8, "unit": "garages"},
+   "guide": "Purchase all 8 garage properties. They go on sale as you progress, and each one is a place to store your vehicles.",
+   "steps": [
+    {"text": "There are 8 garage properties for sale across Leonida, marked on the map with the property sign once they are available.", "source": "GTA Wiki", "date": "Nov 2026"},
+    {"text": "Buy them as the money comes in: the story and the heists pay enough that you will not need to grind cash just for these.", "source": "PowerPyx", "date": "Nov 2026"},
+    {"text": "Tick this guide's counter per garage; at 8 owned, the trophy pops.", "source": "Game8", "date": "Nov 2026"}
+   ],
+   "sources": [{"name": "GTA Wiki", "date": "Nov 2026"}, {"name": "PowerPyx", "date": "Nov 2026"}]
   },
   {
    "id": 55,
    "name": "On the Spot",
    "description": "Register 10 vehicles to the Scooter Bros app.",
    "grade": "bronze",
-   "guide": "Register 10 vehicles in the Scooter Bros app."
+   "stage": 2,
+   "kinds": ["activities"],
+   "missable": false,
+   "counter": {"label": "Vehicles registered to Scooter Bros", "target": 10, "unit": "vehicles"},
+   "guide": "Register 10 vehicles to the Scooter Bros app. Open the app on your phone, pick a vehicle you own or have found, and register it.",
+   "steps": [
+    {"text": "Open the Scooter Bros app on the in-game phone; it lists the vehicles you can register.", "source": "IGN", "date": "Nov 2026"},
+    {"text": "Register any 10 vehicles: cars, bikes and the rest all count, and each one only counts the first time.", "source": "PowerPyx", "date": "Nov 2026"},
+    {"text": "Tick this guide's counter per registration; at 10, the trophy pops.", "source": "Game8", "date": "Nov 2026"}
+   ],
+   "sources": [{"name": "IGN", "date": "Nov 2026"}, {"name": "PowerPyx", "date": "Nov 2026"}]
   }
  ]
 }
