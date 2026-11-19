@@ -8,10 +8,6 @@ import { extname, join, normalize, resolve, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const appRoot = resolve(fileURLToPath(new URL('./app', import.meta.url)));
-const args = process.argv.slice(2);
-const portArg = args.indexOf('--port');
-const wanted = portArg === -1 ? 8080 : Number(args[portArg + 1]);
-const port = Number.isInteger(wanted) && wanted > 0 && wanted < 65536 ? wanted : 8080;
 
 const CONTENT_TYPES = {
   '.html': 'text/html; charset=utf-8',
@@ -24,21 +20,22 @@ const CONTENT_TYPES = {
   '.jpeg': 'image/jpeg',
 };
 
-createServer((request, response) => {
-  const url = new URL(request.url ?? '/', 'http://localhost');
-  let pathname;
-  try {
-    pathname = decodeURIComponent(url.pathname);
-  } catch {
-    response.writeHead(400).end('bad request');
-    return;
-  }
-  if (pathname.endsWith('/')) pathname += 'index.html';
+function pickPort() {
+  const args = process.argv.slice(2);
+  const at = args.indexOf('--port');
+  const wanted = at === -1 ? 8080 : Number(args[at + 1]);
+  return Number.isInteger(wanted) && wanted > 0 && wanted < 65536 ? wanted : 8080;
+}
+
+// Resolve a request path to a file under app/, refusing anything that
+// escapes it (a `..` in the URL must never read outside the guide).
+function resolveAppFile(pathname) {
   const file = resolve(join(appRoot, normalize(pathname)));
-  if (file !== appRoot && !file.startsWith(appRoot + sep)) {
-    response.writeHead(403).end('forbidden');
-    return;
-  }
+  if (file !== appRoot && !file.startsWith(appRoot + sep)) return null;
+  return file;
+}
+
+function serveFile(file, response) {
   let size;
   try {
     const stats = statSync(file);
@@ -54,6 +51,25 @@ createServer((request, response) => {
     'cache-control': 'no-store',
   });
   createReadStream(file).pipe(response);
+}
+
+const port = pickPort();
+createServer((request, response) => {
+  const url = new URL(request.url ?? '/', 'http://localhost');
+  let pathname;
+  try {
+    pathname = decodeURIComponent(url.pathname);
+  } catch {
+    response.writeHead(400).end('bad request');
+    return;
+  }
+  if (pathname.endsWith('/')) pathname += 'index.html';
+  const file = resolveAppFile(pathname);
+  if (file === null) {
+    response.writeHead(403).end('forbidden');
+    return;
+  }
+  serveFile(file, response);
 }).listen(port, '127.0.0.1', () => {
   console.log(`Leonida Ledger is on http://localhost:${port}`);
 });

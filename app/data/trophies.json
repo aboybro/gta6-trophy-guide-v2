@@ -3,21 +3,21 @@
  "platform": "PlayStation 5",
  "list": "the official 55 trophies, 2026-11-18",
  "sources": [
-  {"name": "PowerPyx", "date": "Nov 2026", "work": "GTA 6 Trophy Guide & Roadmap", "covers": "numbered steps, roadmap order, the one missable trophy, unconfirmed methods"},
-  {"name": "PSNProfiles", "date": "Nov 2026", "work": "Grand Theft Auto VI trophy list", "covers": "official names, descriptions, grades and tracked counts"},
-  {"name": "Exophase", "date": "Nov 2026", "work": "Grand Theft Auto VI trophies", "covers": "official names, descriptions and grades, cross-checked against PSNProfiles"},
-  {"name": "TrueTrophies", "date": "Nov 2026", "work": "GTA VI trophy guide", "covers": "numbered steps for activity and collectible trophies"},
-  {"name": "IGN", "date": "Nov 2026", "work": "GTA VI wiki and guides", "covers": "mission order, activity unlocks, named locations"},
-  {"name": "Game8", "date": "Nov 2026", "work": "GTA VI trophy guide", "covers": "numbered steps and tracked counts for grind trophies"},
-  {"name": "GTA BOOM", "date": "Nov 2026", "work": "GTA VI guides", "covers": "numbered steps for side strands and activities"},
-  {"name": "GTA Wiki", "date": "Nov 2026", "work": "Leonida locations", "covers": "where the places in a step are: ranges, alleys, shops, garages, beaches"},
-  {"name": "Polygon", "date": "Nov 2026", "work": "GTA VI guides", "covers": "numbered steps for story and side missions"},
-  {"name": "Eurogamer", "date": "Nov 2026", "work": "GTA VI guides", "covers": "numbered steps for story missions and activities"}
+  {"name": "PowerPyx", "date": "Nov 2026", "work": "GTA 6 Trophy Guide and Roadmap", "covers": "step-by-step routes, the roadmap order, the single missable trophy, and which methods are still unconfirmed"},
+  {"name": "PSNProfiles", "date": "Nov 2026", "work": "Grand Theft Auto VI trophy list", "covers": "official names, descriptions, grades and the counts PlayStation tracks"},
+  {"name": "Exophase", "date": "Nov 2026", "work": "Grand Theft Auto VI trophies", "covers": "official names, descriptions and grades, checked against PSNProfiles"},
+  {"name": "TrueTrophies", "date": "Nov 2026", "work": "GTA VI trophy guide", "covers": "step-by-step help for activity and collectible trophies"},
+  {"name": "IGN", "date": "Nov 2026", "work": "GTA VI wiki and guides", "covers": "the mission order, when activities unlock, and named places"},
+  {"name": "Game8", "date": "Nov 2026", "work": "GTA VI trophy guide", "covers": "step-by-step help and tracked counts for the grind trophies"},
+  {"name": "GTA BOOM", "date": "Nov 2026", "work": "GTA VI guides", "covers": "step-by-step help for side strands and activities"},
+  {"name": "GTA Wiki", "date": "Nov 2026", "work": "Leonida locations", "covers": "where the places in each step are: shooting ranges, alleys, shops, garages, beaches"},
+  {"name": "Polygon", "date": "Nov 2026", "work": "GTA VI guides", "covers": "step-by-step help for story and side missions"},
+  {"name": "Eurogamer", "date": "Nov 2026", "work": "GTA VI guides", "covers": "step-by-step help for story missions and activities"}
  ],
  "roadmap": [
-  {"stage": 1, "title": "Chapters 1-2: learn Leonida", "hours": "about 25-30 hours", "order": "Play Gone Fishing, then every Chapter 1 mission, then every Chapter 2 mission. Meditate at the first spot before Chapter 1 ends. Start the easy collectibles (vehicles, areas) as you travel.", "trophies": [2, 3, 4, 8, 28], "warning": "MISSABLE: Positive Mental Attitude. Its first meditation spot is gone after Chapter 1, so meditate there before you finish the chapter."},
-  {"stage": 2, "title": "Chapters 3-4: strands and side content", "hours": "about 40-50 hours", "order": "Finish Chapters 3 and 4 and their named missions, then play every stranger strand to its final mission (Andy, Kenton, Billy, Randy, Tyrone). Between missions, work the activities: shooting range, races, drone races, fishing, arcade, bowling, hunting and meditation.", "trophies": [5, 6, 9, 10, 11, 12, 13, 22, 23, 24, 25, 26, 27], "warning": "No trophy in this stage is missable. Every strand can still be finished after the story, in free roam."},
-  {"stage": 3, "title": "Finale and cleanup: 100% and Platinum", "hours": "about 80-100 hours", "order": "Complete the final mission, then clear the counters in this guide: stunts, WAiNK It spots, vehicles, areas, card sets, bank vaults, gangs, challenges and the two money totals. Check the in-game stats page for gaps, then finish 100% Completion for A Long Road. The Platinum pops with the last of the other 54.", "trophies": [1, 7, 14], "warning": "Nothing here is missable. The long grind is the counters, so start them in stage 1 and 2 instead of leaving them all for last."}
+  {"stage": 1, "title": "Chapters 1-2: learn Leonida", "hours": "about 25-30 hours", "order": "Start with Gone Fishing, then clear every mission in Chapter 1, then every mission in Chapter 2. Meditate at the first spot before Chapter 1 closes. Pick up the easy collectibles (vehicles, areas) while you travel.", "trophies": [2, 3, 4, 8, 28], "warning": "MISSABLE: Positive Mental Attitude. The first meditation spot is gone once Chapter 1 ends, so meditate there before you finish the chapter."},
+  {"stage": 2, "title": "Chapters 3-4: strands and side content", "hours": "about 40-50 hours", "order": "Clear Chapters 3 and 4 and their named missions, then play each stranger strand through to its last mission (Andy, Kenton, Billy, Randy, Tyrone). Between missions, work the activities: the shooting range, races, drone races, fishing, the arcade, bowling, hunting and meditation.", "trophies": [5, 6, 9, 10, 11, 12, 13, 22, 23, 24, 25, 26, 27], "warning": "Nothing in this stage can be missed. Every strand can still be finished after the story, in free roam."},
+  {"stage": 3, "title": "Finale and cleanup: 100% and Platinum", "hours": "about 80-100 hours", "order": "Finish the final mission, then work through the counters in this guide: stunts, WAiNK It spots, vehicles, areas, card sets, bank vaults, gangs, challenges and the two money totals. Check the in-game stats page for gaps, then reach 100% Completion for A Long Road. The Platinum pops with the last of the other 54.", "trophies": [1, 7, 14], "warning": "Nothing here can be missed. The counters are the long grind, so start them in stages 1 and 2 instead of saving them all for last."}
  ],
  "trophies": [
   {
@@ -28,11 +28,11 @@
    "stage": 3,
    "kinds": ["story"],
    "missable": false,
-   "guide": "The Platinum is the last trophy you earn: it pops the moment the other 54 are all checked off, so follow the roadmap stages in order and let the counters run as you play.",
+   "guide": "The Platinum arrives on its own: the moment the other 54 trophies are all earned, it pops. Follow the roadmap stages in order and keep the counters ticking as you play.",
    "steps": [
-    {"text": "Earn the other 54 trophies. The Platinum unlocks by itself the instant the last one lands, with no extra task.", "source": "PSNProfiles", "date": "Nov 2026"},
-    {"text": "Work the roadmap in order (stages 1, 2, 3) instead of grinding everything at the end: the counters are the long tail, and starting them early saves hours.", "source": "PowerPyx", "date": "Nov 2026"},
-    {"text": "Use this guide's progress bar as the checklist: when it reads 54 of 55, the one row still unchecked is your last job.", "source": "PowerPyx", "date": "Nov 2026"}
+    {"text": "Earn the other 54 trophies first. The Platinum needs no separate task — it unlocks by itself the instant the last one lands.", "source": "PSNProfiles", "date": "Nov 2026"},
+    {"text": "Play the roadmap stages in order (1, then 2, then 3) rather than saving every grind for the end: the counters are the long tail, and starting them early saves hours.", "source": "PowerPyx", "date": "Nov 2026"},
+    {"text": "Watch this guide's progress bar as your checklist: when it reads 54 of 55, the one row still unchecked is your last job.", "source": "PowerPyx", "date": "Nov 2026"}
    ],
    "sources": [{"name": "PSNProfiles", "date": "Nov 2026"}, {"name": "PowerPyx", "date": "Nov 2026"}]
   },
@@ -44,10 +44,10 @@
    "stage": 1,
    "kinds": ["story"],
    "missable": false,
-   "guide": "The opening mission. Play through Gone Fishing and the trophy pops when the mission ends.",
+   "guide": "The opening mission. Play Gone Fishing through to the end and the trophy pops when the mission closes.",
    "steps": [
-    {"text": "Start a new game and play the opening mission, Gone Fishing, from the first cutscene to the mission-passed screen.", "source": "IGN", "date": "Nov 2026"},
-    {"text": "Follow the on-screen prompts for movement, driving and the fishing beats; there is no branch or fail state that can lock this trophy out.", "source": "PowerPyx", "date": "Nov 2026"},
+    {"text": "Start a new game and play the opening mission, Gone Fishing, from the first cutscene through to the mission-passed screen.", "source": "IGN", "date": "Nov 2026"},
+    {"text": "Follow the on-screen prompts for movement, driving and the fishing beats; no branch or fail state can lock this trophy out.", "source": "PowerPyx", "date": "Nov 2026"},
     {"text": "The trophy unlocks at the mission's end, before Chapter 1 properly begins.", "source": "PSNProfiles", "date": "Nov 2026"}
    ],
    "sources": [{"name": "IGN", "date": "Nov 2026"}, {"name": "PowerPyx", "date": "Nov 2026"}]
@@ -60,7 +60,7 @@
    "stage": 1,
    "kinds": ["story"],
    "missable": false,
-   "guide": "Finish every mission in Chapter 1. The trophy pops at the chapter's closing scene.",
+   "guide": "Clear every mission in Chapter 1. The trophy pops at the chapter's closing scene.",
    "steps": [
     {"text": "Play Chapter 1's missions in the order the game offers them; the chapter tracker in the pause menu shows which are left.", "source": "IGN", "date": "Nov 2026"},
     {"text": "Before the chapter's last mission, meditate at the first meditation spot: it disappears after Chapter 1, and it is the only missable step in the whole game.", "source": "PowerPyx", "date": "Nov 2026"},
@@ -76,7 +76,7 @@
    "stage": 1,
    "kinds": ["story"],
    "missable": false,
-   "guide": "Finish every mission in Chapter 2. The trophy pops at the chapter's closing scene.",
+   "guide": "Clear every mission in Chapter 2. The trophy pops at the chapter's closing scene.",
    "steps": [
     {"text": "Play Chapter 2's missions in the order the game offers them, including the story beats that open new parts of the map.", "source": "IGN", "date": "Nov 2026"},
     {"text": "Side strands that open in Chapter 2 can wait: only the chapter missions are needed for this trophy.", "source": "PowerPyx", "date": "Nov 2026"},
@@ -92,7 +92,7 @@
    "stage": 2,
    "kinds": ["story"],
    "missable": false,
-   "guide": "Finish every mission in Chapter 3. The trophy pops at the chapter's closing scene.",
+   "guide": "Clear every mission in Chapter 3. The trophy pops at the chapter's closing scene.",
    "steps": [
     {"text": "Play Chapter 3's missions in the order the game offers them; Vice City's districts open up as the chapter runs.", "source": "IGN", "date": "Nov 2026"},
     {"text": "Named missions in this chapter also feed their own trophies (The Cartel Heist, Child's Play), so each one you finish ticks two rows at once.", "source": "PowerPyx", "date": "Nov 2026"},
@@ -108,7 +108,7 @@
    "stage": 2,
    "kinds": ["story"],
    "missable": false,
-   "guide": "Finish every mission in Chapter 4. The trophy pops at the chapter's closing scene, just before the finale.",
+   "guide": "Clear every mission in Chapter 4. The trophy pops at the chapter's closing scene, just before the finale.",
    "steps": [
     {"text": "Play Chapter 4's missions in the order the game offers them; this is the last full chapter before the finale.", "source": "IGN", "date": "Nov 2026"},
     {"text": "Named missions in this chapter also feed their own trophies (Headliners, VCIA Takedown, Operation Savage Glory).", "source": "PowerPyx", "date": "Nov 2026"},
@@ -192,7 +192,7 @@
    "guide": "Complete the story mission Headliners in Chapter 4.",
    "steps": [
     {"text": "Headliners is a Chapter 4 story mission: follow the map marker when it appears after the chapter's earlier missions.", "source": "IGN", "date": "Nov 2026"},
-    {"text": "The mission mixes driving and a set-piece finish; keep a sturdy car and a full armour bar for the last stretch.", "source": "Eurogamer", "date": "Nov 2026"},
+    {"text": "The mission mixes driving with a set-piece finish; keep a sturdy car and a full armour bar for the last stretch.", "source": "Eurogamer", "date": "Nov 2026"},
     {"text": "Finish the mission and the trophy unlocks at the mission-passed screen.", "source": "PSNProfiles", "date": "Nov 2026"}
    ],
    "sources": [{"name": "IGN", "date": "Nov 2026"}, {"name": "Eurogamer", "date": "Nov 2026"}]
@@ -237,7 +237,7 @@
    "stage": 3,
    "kinds": ["activities", "collectibles"],
    "missable": false,
-   "guide": "The gold completion trophy: reach 100% in the game's own completion checklist. It is the last big job before the Platinum.",
+   "guide": "The gold completion trophy: reach 100% on the game's own completion checklist. It is the last big job before the Platinum.",
    "steps": [
     {"text": "100% Completion counts the story, the stranger strands, the collectibles and the activities together; the in-game stats page shows the percentage and what is still missing.", "source": "PowerPyx", "date": "Nov 2026"},
     {"text": "Clear the story and the strands first, then work the counters in this guide one at a time, checking the stats page after each one.", "source": "IGN", "date": "Nov 2026"},
@@ -271,7 +271,7 @@
    "kinds": ["activities"],
    "missable": false,
    "counter": {"label": "Activity types tried", "target": 9, "unit": "types"},
-   "guide": "Try each of the 9 activity types once: the shooting range, races, drone races, fishing, arcade, bowling, meditation, hunting and the stranger strands' activities. One try each is enough.",
+   "guide": "Try each of the 9 activity types once: the shooting range, races, drone races, fishing, the arcade, bowling, meditation, hunting and the stranger strands' activities. One try each is enough.",
    "steps": [
     {"text": "The 9 activity types are the ones this guide tags as activities; trying one of each is the whole requirement, and no score or win is needed.", "source": "Game8", "date": "Nov 2026"},
     {"text": "Work through the activity trophies in this guide: every one you start ticks a type off, so the trophy lands while you chase the others.", "source": "PowerPyx", "date": "Nov 2026"},
@@ -308,7 +308,7 @@
    "guide": "Win a Top Fun drone race at all 14 locations. One win per location; the race can be retried as often as you like.",
    "steps": [
     {"text": "Top Fun drone races are marked at 14 locations across Leonida; each location needs one win, not a best time.", "source": "GTA Wiki", "date": "Nov 2026"},
-    {"text": "Fly the racing line: cut the gates tight and use the boost pads, and brake before the sharp turns instead of overshooting them.", "source": "PowerPyx", "date": "Nov 2026"},
+    {"text": "Fly the racing line: cut the gates tight, use the boost pads, and brake before the sharp turns instead of overshooting them.", "source": "PowerPyx", "date": "Nov 2026"},
     {"text": "Tick this guide's counter after each location's win; the in-game activity menu shows which locations you have already won.", "source": "Game8", "date": "Nov 2026"}
    ],
    "sources": [{"name": "GTA Wiki", "date": "Nov 2026"}, {"name": "PowerPyx", "date": "Nov 2026"}]
@@ -345,8 +345,7 @@
     {"text": "If you lose, the challenge can be retried at once from the same spot; the trophy pops on the win screen.", "source": "GTA BOOM", "date": "Nov 2026"}
    ],
    "sources": [{"name": "IGN", "date": "Nov 2026"}, {"name": "PowerPyx", "date": "Nov 2026"}]
-  }
-,
+  },
   {
    "id": 21,
    "name": "Stick Fiddler",
@@ -510,8 +509,7 @@
     {"text": "Tick this guide's counter after each full set; at 3 sets, the silver trophy pops.", "source": "PowerPyx", "date": "Nov 2026"}
    ],
    "sources": [{"name": "GTA Wiki", "date": "Nov 2026"}, {"name": "Game8", "date": "Nov 2026"}]
-  }
-,
+  },
   {
    "id": 31,
    "name": "You WAiNKer!",
@@ -677,8 +675,7 @@
     {"text": "Tick this guide's counter after each escaped vault; at 5, the silver trophy pops.", "source": "TrueTrophies", "date": "Nov 2026"}
    ],
    "sources": [{"name": "Game8", "date": "Nov 2026"}, {"name": "PowerPyx", "date": "Nov 2026"}]
-  }
-,
+  },
   {
    "id": 41,
    "name": "A Classic Blitz Play",
@@ -845,8 +842,7 @@
     {"text": "Sweep the odd corners of the map at night (the swamps, the desert roads, the empty beaches) and watch for anything out of place; if nothing pops, wait for a confirmed guide.", "source": "PowerPyx", "date": "Nov 2026"}
    ],
    "sources": [{"name": "PowerPyx", "date": "Nov 2026"}, {"name": "IGN", "date": "Nov 2026"}]
-  }
-,
+  },
   {
    "id": 51,
    "name": "Ten Pin",
