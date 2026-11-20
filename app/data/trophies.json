@@ -4,8 +4,8 @@
  "list": "the official 55 trophies, 2026-11-18",
  "sources": [
   {"name": "PowerPyx", "date": "Nov 2026", "work": "GTA 6 Trophy Guide and Roadmap", "covers": "step-by-step routes, the roadmap order, the single missable trophy, and which methods are still unconfirmed"},
-  {"name": "PSNProfiles", "date": "Nov 2026", "work": "Grand Theft Auto VI trophy list", "covers": "official names, descriptions, grades and the counts PlayStation tracks"},
-  {"name": "Exophase", "date": "Nov 2026", "work": "Grand Theft Auto VI trophies", "covers": "official names, descriptions and grades, checked against PSNProfiles"},
+  {"name": "PSNProfiles", "date": "Nov 2026", "work": "Grand Theft Auto VI trophy list", "covers": "official names, descriptions, grades and the counts PlayStation tracks", "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"},
+  {"name": "Exophase", "date": "Nov 2026", "work": "Grand Theft Auto VI trophies", "covers": "official names, descriptions and grades, checked against PSNProfiles", "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/"},
   {"name": "TrueTrophies", "date": "Nov 2026", "work": "GTA VI trophy guide", "covers": "step-by-step help for activity and collectible trophies"},
   {"name": "IGN", "date": "Nov 2026", "work": "GTA VI wiki and guides", "covers": "the mission order, when activities unlock, and named places"},
   {"name": "Game8", "date": "Nov 2026", "work": "GTA VI trophy guide", "covers": "step-by-step help and tracked counts for the grind trophies"},
@@ -15,9 +15,9 @@
   {"name": "Eurogamer", "date": "Nov 2026", "work": "GTA VI guides", "covers": "step-by-step help for story missions and activities"}
  ],
  "roadmap": [
-  {"stage": 1, "title": "Chapters 1-2: learn Leonida", "hours": "about 25-30 hours", "order": "Start with Gone Fishing, then clear every mission in Chapter 1, then every mission in Chapter 2. Meditate at the first spot before Chapter 1 closes. Pick up the easy collectibles (vehicles, areas) while you travel.", "trophies": [2, 3, 4, 8, 28], "warning": "MISSABLE: Positive Mental Attitude. The first meditation spot is gone once Chapter 1 ends, so meditate there before you finish the chapter."},
-  {"stage": 2, "title": "Chapters 3-4: strands and side content", "hours": "about 40-50 hours", "order": "Clear Chapters 3 and 4 and their named missions, then play each stranger strand through to its last mission (Andy, Kenton, Billy, Randy, Tyrone). Between missions, work the activities: the shooting range, races, drone races, fishing, the arcade, bowling, hunting and meditation.", "trophies": [5, 6, 9, 10, 11, 12, 13, 22, 23, 24, 25, 26, 27], "warning": "Nothing in this stage can be missed. Every strand can still be finished after the story, in free roam."},
-  {"stage": 3, "title": "Finale and cleanup: 100% and Platinum", "hours": "about 80-100 hours", "order": "Finish the final mission, then work through the counters in this guide: stunts, WAiNK It spots, vehicles, areas, card sets, bank vaults, gangs, challenges and the two money totals. Check the in-game stats page for gaps, then reach 100% Completion for A Long Road. The Platinum pops with the last of the other 54.", "trophies": [1, 7, 14], "warning": "Nothing here can be missed. The counters are the long grind, so start them in stages 1 and 2 instead of saving them all for last."}
+  {"stage": 1, "title": "Chapters 1-2: learn Leonida", "hours": "about 25-30 hours", "order": "Start with Gone Fishing, then clear every mission in Chapter 1, then every mission in Chapter 2. Meditate at the first spot before Chapter 1 closes. Pick up the easy collectibles (vehicles, areas) while you travel.", "plan": ["Play Gone Fishing, then every Chapter 1 mission in order.", "Meditate at the first spot BEFORE the last Chapter 1 mission — it is gone after the chapter.", "Clear Chapter 2 the same way, picking up vehicles and areas as you travel.", "Start the counters early: stunts, WAiNK It spots, areas and vehicles."], "trophies": [2, 3, 4, 8, 28], "warning": "MISSABLE: Positive Mental Attitude. The first meditation spot is gone once Chapter 1 ends, so meditate there before you finish the chapter."},
+  {"stage": 2, "title": "Chapters 3-4: strands and side content", "hours": "about 40-50 hours", "order": "Clear Chapters 3 and 4 and their named missions, then play each stranger strand through to its last mission (Andy, Kenton, Billy, Randy, Tyrone). Between missions, work the activities: the shooting range, races, drone races, fishing, the arcade, bowling, hunting and meditation.", "plan": ["Clear Chapters 3 and 4 and their named missions.", "Play the five stranger strands to the end (Andy, Kenton, Billy, Randy, Tyrone) plus three more for the silver.", "Work the activities between missions: shooting range, races, drone races, fishing, arcade, bowling, hunting.", "Meditate at the remaining 17 spots; rob vaults, trucks and gang operations as they appear."], "trophies": [5, 6, 9, 10, 11, 12, 13, 22, 23, 24, 25, 26, 27], "warning": "Nothing in this stage can be missed. Every strand can still be finished after the story, in free roam."},
+  {"stage": 3, "title": "Finale and cleanup: 100% and Platinum", "hours": "about 80-100 hours", "order": "Finish the final mission, then work through the counters in this guide: stunts, WAiNK It spots, vehicles, areas, card sets, bank vaults, gangs, challenges and the two money totals. Check the in-game stats page for gaps, then reach 100% Completion for A Long Road. The Platinum pops with the last of the other 54.", "plan": ["Finish the final mission for the gold, then stay in free roam.", "Work the counters one at a time, checking the in-game stats page after each.", "Sweep the last collectibles (cards, WAiNK It spots, areas) for the final percent.", "Reach 100% Completion for A Long Road — the Platinum pops with the last of the other 54."], "trophies": [1, 7, 14], "warning": "Nothing here can be missed. The counters are the long grind, so start them in stages 1 and 2 instead of saving them all for last."}
  ],
  "trophies": [
   {
@@ -28,7 +28,9 @@
    "stage": 3,
    "kinds": ["story"],
    "missable": false,
-   "guide": "The Platinum arrives on its own: the moment the other 54 trophies are all earned, it pops. Follow the roadmap stages in order and keep the counters ticking as you play.",
+   "guide": "The Platinum arrives on its own: the moment the other 54 trophies are all earned, it pops. Follow the roadmap stages in order and keep the counters ticking as you play, so the last trophy is never a 40-hour grind.",
+   "hours": "—",
+   "when": "Last of all",
    "steps": [
     {"text": "Earn the other 54 trophies first. The Platinum needs no separate task — it unlocks by itself the instant the last one lands.", "source": "PSNProfiles", "date": "Nov 2026"},
     {"text": "Play the roadmap stages in order (1, then 2, then 3) rather than saving every grind for the end: the counters are the long tail, and starting them early saves hours.", "source": "PowerPyx", "date": "Nov 2026"},
@@ -44,7 +46,9 @@
    "stage": 1,
    "kinds": ["story"],
    "missable": false,
-   "guide": "The opening mission. Play Gone Fishing through to the end and the trophy pops when the mission closes.",
+   "guide": "The opening mission, and the first trophy most players earn. Play Gone Fishing through to the end and the trophy pops when the mission closes.",
+   "hours": "≈30 min",
+   "when": "Chapter 1 opening",
    "steps": [
     {"text": "Start a new game and play the opening mission, Gone Fishing, from the first cutscene through to the mission-passed screen.", "source": "IGN", "date": "Nov 2026"},
     {"text": "Follow the on-screen prompts for movement, driving and the fishing beats; no branch or fail state can lock this trophy out.", "source": "PowerPyx", "date": "Nov 2026"},
@@ -60,7 +64,9 @@
    "stage": 1,
    "kinds": ["story"],
    "missable": false,
-   "guide": "Clear every mission in Chapter 1. The trophy pops at the chapter's closing scene.",
+   "guide": "Clear every mission in Chapter 1. The trophy pops at the chapter's closing scene — but do the missable meditation first (see Positive Mental Attitude).",
+   "hours": "≈4 h",
+   "when": "Chapter 1",
    "steps": [
     {"text": "Play Chapter 1's missions in the order the game offers them; the chapter tracker in the pause menu shows which are left.", "source": "IGN", "date": "Nov 2026"},
     {"text": "Before the chapter's last mission, meditate at the first meditation spot: it disappears after Chapter 1, and it is the only missable step in the whole game.", "source": "PowerPyx", "date": "Nov 2026"},
@@ -76,7 +82,9 @@
    "stage": 1,
    "kinds": ["story"],
    "missable": false,
-   "guide": "Clear every mission in Chapter 2. The trophy pops at the chapter's closing scene.",
+   "guide": "Clear every mission in Chapter 2. The trophy pops at the chapter's closing scene; side strands that open here can wait.",
+   "hours": "≈6 h",
+   "when": "Chapter 2",
    "steps": [
     {"text": "Play Chapter 2's missions in the order the game offers them, including the story beats that open new parts of the map.", "source": "IGN", "date": "Nov 2026"},
     {"text": "Side strands that open in Chapter 2 can wait: only the chapter missions are needed for this trophy.", "source": "PowerPyx", "date": "Nov 2026"},
@@ -92,7 +100,9 @@
    "stage": 2,
    "kinds": ["story"],
    "missable": false,
-   "guide": "Clear every mission in Chapter 3. The trophy pops at the chapter's closing scene.",
+   "guide": "Clear every mission in Chapter 3. Two of its named missions also feed their own trophies, so each one ticks two rows at once.",
+   "hours": "≈8 h",
+   "when": "Chapter 3",
    "steps": [
     {"text": "Play Chapter 3's missions in the order the game offers them; Vice City's districts open up as the chapter runs.", "source": "IGN", "date": "Nov 2026"},
     {"text": "Named missions in this chapter also feed their own trophies (The Cartel Heist, Child's Play), so each one you finish ticks two rows at once.", "source": "PowerPyx", "date": "Nov 2026"},
@@ -108,7 +118,9 @@
    "stage": 2,
    "kinds": ["story"],
    "missable": false,
-   "guide": "Clear every mission in Chapter 4. The trophy pops at the chapter's closing scene, just before the finale.",
+   "guide": "Clear every mission in Chapter 4. The trophy pops at the chapter's closing scene, just before the finale — three named missions here have their own trophies too.",
+   "hours": "≈8 h",
+   "when": "Chapter 4",
    "steps": [
     {"text": "Play Chapter 4's missions in the order the game offers them; this is the last full chapter before the finale.", "source": "IGN", "date": "Nov 2026"},
     {"text": "Named missions in this chapter also feed their own trophies (Headliners, VCIA Takedown, Operation Savage Glory).", "source": "PowerPyx", "date": "Nov 2026"},
@@ -124,7 +136,9 @@
    "stage": 3,
    "kinds": ["story"],
    "missable": false,
-   "guide": "The gold story trophy: finish the game's final mission after Chapter 4. Free roam and cleanup stay open afterwards.",
+   "guide": "The gold story trophy: finish the game's final mission after Chapter 4. Free roam and cleanup stay open afterwards, so nothing is lost by finishing.",
+   "hours": "≈2 h",
+   "when": "Finale",
    "steps": [
     {"text": "Finish Chapter 4 to unlock the final mission; it appears as the next story beat on the map.", "source": "IGN", "date": "Nov 2026"},
     {"text": "Play the final mission to its end. Stock up on ammo and armour first: it is the longest single mission in the game.", "source": "PowerPyx", "date": "Nov 2026"},
@@ -140,7 +154,9 @@
    "stage": 1,
    "kinds": ["story"],
    "missable": false,
-   "guide": "Complete the story mission Breakfast Run in Chapter 1.",
+   "guide": "Complete the story mission Breakfast Run in Chapter 1. It is a driving mission — stay close to your partner and the leg restarts, not the mission, if you fall behind.",
+   "hours": "≈1 h",
+   "when": "Chapter 1",
    "steps": [
     {"text": "Breakfast Run is a Chapter 1 story mission: follow the map marker when it appears after the opening missions.", "source": "IGN", "date": "Nov 2026"},
     {"text": "Drive the route the mission sets and keep your partner close; falling too far behind restarts the leg, not the mission.", "source": "PowerPyx", "date": "Nov 2026"},
@@ -156,7 +172,9 @@
    "stage": 2,
    "kinds": ["story"],
    "missable": false,
-   "guide": "Complete the story mission The Cartel Heist in Chapter 3.",
+   "guide": "Complete the story mission The Cartel Heist in Chapter 3. The heist runs in phases — approach, vault, escape — and a failed phase restarts that phase only.",
+   "hours": "≈1.5 h",
+   "when": "Chapter 3",
    "steps": [
     {"text": "The Cartel Heist is a Chapter 3 story mission: it unlocks once the chapter's earlier missions are done.", "source": "IGN", "date": "Nov 2026"},
     {"text": "The heist runs in phases (approach, vault, escape): failing a phase restarts that phase, so take the escape slowly and keep a fast car ready.", "source": "PowerPyx", "date": "Nov 2026"},
@@ -172,15 +190,16 @@
    "stage": 2,
    "kinds": ["story"],
    "missable": false,
-   "guide": "Complete the story mission Child's Play in Chapter 3.",
+   "guide": "Complete the story mission Child's Play in Chapter 3. It is mostly on foot and up close — bring a short-range weapon and armour rather than a rifle.",
+   "hours": "≈1 h",
+   "when": "Chapter 3",
    "steps": [
     {"text": "Child's Play is a Chapter 3 story mission: follow the map marker when it appears.", "source": "IGN", "date": "Nov 2026"},
     {"text": "The mission is mostly on foot and up close, so bring a short-range weapon and armour rather than a rifle.", "source": "Polygon", "date": "Nov 2026"},
     {"text": "Finish the mission and the trophy unlocks at the mission-passed screen.", "source": "PSNProfiles", "date": "Nov 2026"}
    ],
    "sources": [{"name": "IGN", "date": "Nov 2026"}, {"name": "Polygon", "date": "Nov 2026"}]
-  }
-,
+  },
   {
    "id": 11,
    "name": "DWNFALL",
@@ -189,7 +208,9 @@
    "stage": 2,
    "kinds": ["story"],
    "missable": false,
-   "guide": "Complete the story mission Headliners in Chapter 4.",
+   "guide": "Complete the story mission Headliners in Chapter 4. It mixes driving with a set-piece finish — keep a sturdy car and a full armour bar for the last stretch.",
+   "hours": "≈1.5 h",
+   "when": "Chapter 4",
    "steps": [
     {"text": "Headliners is a Chapter 4 story mission: follow the map marker when it appears after the chapter's earlier missions.", "source": "IGN", "date": "Nov 2026"},
     {"text": "The mission mixes driving with a set-piece finish; keep a sturdy car and a full armour bar for the last stretch.", "source": "Eurogamer", "date": "Nov 2026"},
@@ -205,7 +226,9 @@
    "stage": 2,
    "kinds": ["story"],
    "missable": false,
-   "guide": "Complete the story mission VCIA Takedown in Chapter 4, at the Vice City airport.",
+   "guide": "Complete the story mission VCIA Takedown in Chapter 4, at the Vice City airport. The airport is heavily guarded — move between the parked aircraft instead of crossing open tarmac.",
+   "hours": "≈1.5 h",
+   "when": "Chapter 4",
    "steps": [
     {"text": "VCIA Takedown is a Chapter 4 story mission at Vice City International Airport: follow the map marker when it appears.", "source": "IGN", "date": "Nov 2026"},
     {"text": "The airport is heavily guarded, so use cover and move between the parked aircraft rather than crossing the open tarmac.", "source": "PowerPyx", "date": "Nov 2026"},
@@ -221,7 +244,9 @@
    "stage": 2,
    "kinds": ["story"],
    "missable": false,
-   "guide": "Complete the story mission Operation Savage Glory in Chapter 4.",
+   "guide": "Complete the story mission Operation Savage Glory in Chapter 4. It is combat-heavy with a long final push — bring a rifle, plenty of ammo and snacks for health.",
+   "hours": "≈2 h",
+   "when": "Chapter 4",
    "steps": [
     {"text": "Operation Savage Glory is a Chapter 4 story mission: follow the map marker when it appears after Headliners and VCIA Takedown.", "source": "IGN", "date": "Nov 2026"},
     {"text": "The mission is combat-heavy with a long final push; bring a rifle, plenty of ammo and snacks for health.", "source": "Polygon", "date": "Nov 2026"},
@@ -237,7 +262,9 @@
    "stage": 3,
    "kinds": ["activities", "collectibles"],
    "missable": false,
-   "guide": "The gold completion trophy: reach 100% on the game's own completion checklist. It is the last big job before the Platinum.",
+   "guide": "The gold completion trophy: reach 100% on the game's own completion checklist. It is the last big job before the Platinum — the final percent is almost always collectibles.",
+   "hours": "≈10 h cleanup",
+   "when": "After the finale",
    "steps": [
     {"text": "100% Completion counts the story, the stranger strands, the collectibles and the activities together; the in-game stats page shows the percentage and what is still missing.", "source": "PowerPyx", "date": "Nov 2026"},
     {"text": "Clear the story and the strands first, then work the counters in this guide one at a time, checking the stats page after each one.", "source": "IGN", "date": "Nov 2026"},
@@ -254,10 +281,12 @@
    "kinds": ["activities"],
    "missable": false,
    "counter": {"label": "Stunts completed", "target": 250, "unit": "stunts"},
-   "guide": "Pull off 250 stunts: jumps, near misses, airtime and other driving feats. The counter in this guide tracks them; PlayStation tracks the same count.",
+   "guide": "Pull off 250 stunts: jumps, near misses, airtime and other driving feats. The counter in this guide tracks them; PlayStation tracks the same count, and the game's stats page shows the running total.",
+   "hours": "≈6 h",
+   "when": "Any time",
    "steps": [
-    {"text": "A stunt is any driving feat the game flashes on screen: big jumps, near misses in traffic, long airtime and clean landings.", "source": "Game8", "date": "Nov 2026"},
-    {"text": "Farm them on the highways: weave through traffic for near misses, then hit the stunt jumps and ramps dotted around Leonida and repeat.", "source": "PowerPyx", "date": "Nov 2026"},
+    {"text": "A stunt is any driving feat the game flashes on screen: big jumps, near misses in traffic, long airtime and clean landings. Each flash counts once toward the 250.", "source": "Game8", "date": "Nov 2026"},
+    {"text": "Farm them on the highways: weave through traffic for near misses, then hit the stunt jumps and ramps dotted around Leonida and repeat the loop. One highway loop yields a dozen stunts in a few minutes.", "source": "PowerPyx", "date": "Nov 2026"},
     {"text": "The game's stats page shows the running total; tick this guide's counter up as you go so you always know how many are left.", "source": "TrueTrophies", "date": "Nov 2026"}
    ],
    "sources": [{"name": "Game8", "date": "Nov 2026"}, {"name": "PowerPyx", "date": "Nov 2026"}]
@@ -271,7 +300,9 @@
    "kinds": ["activities"],
    "missable": false,
    "counter": {"label": "Activity types tried", "target": 9, "unit": "types"},
-   "guide": "Try each of the 9 activity types once: the shooting range, races, drone races, fishing, the arcade, bowling, meditation, hunting and the stranger strands' activities. One try each is enough.",
+   "guide": "Try each of the 9 activity types once: the shooting range, races, drone races, fishing, the arcade, bowling, meditation, hunting and the stranger strands' activities. One try each is enough — no score or win is needed.",
+   "hours": "≈3 h",
+   "when": "Any time",
    "steps": [
     {"text": "The 9 activity types are the ones this guide tags as activities; trying one of each is the whole requirement, and no score or win is needed.", "source": "Game8", "date": "Nov 2026"},
     {"text": "Work through the activity trophies in this guide: every one you start ticks a type off, so the trophy lands while you chase the others.", "source": "PowerPyx", "date": "Nov 2026"},
@@ -288,7 +319,9 @@
    "kinds": ["activities"],
    "missable": false,
    "counter": {"label": "Shooting Range challenges golded", "target": 42, "unit": "challenges"},
-   "guide": "Earn a gold medal in all 42 Shooting Range challenges. Each range has several challenges, and each one needs its gold score.",
+   "guide": "Earn a gold medal in all 42 Shooting Range challenges. Each range has several challenges, and each one needs its gold score — accuracy beats speed.",
+   "hours": "≈5 h",
+   "when": "Any time",
    "steps": [
     {"text": "There are 42 Shooting Range challenges across the ranges in Leonida; each one lists its gold-medal score before you start it.", "source": "PSNProfiles", "date": "Nov 2026"},
     {"text": "Gold scores reward accuracy over speed: aim for headshots and controlled bursts, and restart a challenge the moment a run goes bad.", "source": "PowerPyx", "date": "Nov 2026"},
@@ -306,6 +339,8 @@
    "missable": false,
    "counter": {"label": "Drone race locations won", "target": 14, "unit": "locations"},
    "guide": "Win a Top Fun drone race at all 14 locations. One win per location; the race can be retried as often as you like.",
+   "hours": "≈4 h",
+   "when": "Any time",
    "steps": [
     {"text": "Top Fun drone races are marked at 14 locations across Leonida; each location needs one win, not a best time.", "source": "GTA Wiki", "date": "Nov 2026"},
     {"text": "Fly the racing line: cut the gates tight, use the boost pads, and brake before the sharp turns instead of overshooting them.", "source": "PowerPyx", "date": "Nov 2026"},
@@ -322,7 +357,9 @@
    "kinds": ["activities"],
    "missable": false,
    "counter": {"label": "Different races won", "target": 20, "unit": "races"},
-   "guide": "Win 20 different races. Replays of the same race do not count: it has to be 20 distinct events.",
+   "guide": "Win 20 different races. Replays of the same race do not count: it has to be 20 distinct events — any type counts (street, off-road, boat, air).",
+   "hours": "≈5 h",
+   "when": "Any time",
    "steps": [
     {"text": "Any race type counts (street, off-road, boat, air), but each event only counts the first time you win it.", "source": "PowerPyx", "date": "Nov 2026"},
     {"text": "Work through the race list on the map instead of replaying favourites: the list shows which events you have already won.", "source": "TrueTrophies", "date": "Nov 2026"},
@@ -338,7 +375,9 @@
    "stage": 2,
    "kinds": ["activities"],
    "missable": false,
-   "guide": "Beat Cal in a fishing challenge. Find Cal, take his challenge, and out-fish him.",
+   "guide": "Beat Cal in a fishing challenge. Find Cal, take his challenge, and out-fish him — bigger and rarer fish beat more small ones.",
+   "hours": "≈1 h",
+   "when": "After fishing unlocks",
    "steps": [
     {"text": "Cal offers fishing challenges once you have met him and unlocked fishing; his challenge marker appears at the fishing spots.", "source": "IGN", "date": "Nov 2026"},
     {"text": "A fishing challenge is scored on the catch: bigger and rarer fish beat more small ones, so use the best bait and tackle you can buy.", "source": "PowerPyx", "date": "Nov 2026"},
@@ -354,7 +393,9 @@
    "stage": 2,
    "kinds": ["activities"],
    "missable": false,
-   "guide": "Complete one arcade game, start to finish, at any arcade cabinet in Leonida.",
+   "guide": "Complete one arcade game, start to finish, at any arcade cabinet in Leonida. Any cabinet and any of its games count — pick a quick one first.",
+   "hours": "≈30 min",
+   "when": "Any time",
    "steps": [
     {"text": "Arcade cabinets stand in bars and arcades around Leonida; walk up to one and start a game.", "source": "GTA Wiki", "date": "Nov 2026"},
     {"text": "Any cabinet and any of its games count, and you need to reach the game's end, not just start it.", "source": "Game8", "date": "Nov 2026"},
@@ -370,7 +411,9 @@
    "stage": 2,
    "kinds": ["story"],
    "missable": false,
-   "guide": "Play Andy's strand of side missions to the end and complete his final mission.",
+   "guide": "Play Andy's strand of side missions to the end and complete his final mission. The missions are short and mostly driving and fetch work — quick between story missions.",
+   "hours": "≈2 h",
+   "when": "Chapter 2 onward",
    "steps": [
     {"text": "Andy's strand opens when you meet him in the open world; his missions appear one at a time, each unlocking the next.", "source": "IGN", "date": "Nov 2026"},
     {"text": "Play the strand in order; the missions are short and mostly driving and fetch work, so they are quick between story missions.", "source": "PowerPyx", "date": "Nov 2026"},
@@ -386,7 +429,9 @@
    "stage": 2,
    "kinds": ["story"],
    "missable": false,
-   "guide": "Play Kenton's strand of side missions to the end and complete his final mission.",
+   "guide": "Play Kenton's strand of side missions to the end and complete his final mission. The strand leans on boats and the water — keep a fast boat handy near the coast.",
+   "hours": "≈2 h",
+   "when": "Chapter 2 onward",
    "steps": [
     {"text": "Kenton's strand opens when you meet him; his missions appear one at a time, each unlocking the next.", "source": "IGN", "date": "Nov 2026"},
     {"text": "The strand leans on boats and the water, so keep a fast boat handy near the coast between missions.", "source": "GTA BOOM", "date": "Nov 2026"},
@@ -402,7 +447,9 @@
    "stage": 2,
    "kinds": ["story"],
    "missable": false,
-   "guide": "Play Billy's strand of side missions to the end and complete his final mission.",
+   "guide": "Play Billy's strand of side missions to the end and complete his final mission. The strand is built around bikes — keep a fast motorcycle ready for the long cross-state rides.",
+   "hours": "≈2 h",
+   "when": "Chapter 2 onward",
    "steps": [
     {"text": "Billy's strand opens when you meet him; his missions appear one at a time, each unlocking the next.", "source": "IGN", "date": "Nov 2026"},
     {"text": "The strand is built around bikes, so keep a fast motorcycle ready and expect long cross-state rides.", "source": "PowerPyx", "date": "Nov 2026"},
@@ -419,7 +466,9 @@
    "kinds": ["activities"],
    "missable": false,
    "counter": {"label": "Stranger strands completed", "target": 8, "unit": "strands"},
-   "guide": "Complete 8 stranger mission strands across Leonida. The five named strands (Andy, Kenton, Billy, Randy, Tyrone) are five of the eight.",
+   "guide": "Complete 8 stranger mission strands across Leonida. The five named strands (Andy, Kenton, Billy, Randy, Tyrone) are five of the eight — any three more count.",
+   "hours": "≈6 h",
+   "when": "Chapter 2 onward",
    "steps": [
     {"text": "There are more than 8 stranger strands in Leonida, and any 8 completed strands count; the five named ones in this guide are a head start.", "source": "PowerPyx", "date": "Nov 2026"},
     {"text": "Strangers appear as question-mark markers on the map; each strand is a short chain of missions that ends with its own trophy.", "source": "IGN", "date": "Nov 2026"},
@@ -435,7 +484,9 @@
    "stage": 2,
    "kinds": ["story"],
    "missable": false,
-   "guide": "Play Randy's strand of side missions to the end and complete his final mission.",
+   "guide": "Play Randy's strand of side missions to the end and complete his final mission. The strand is supply runs and deliveries — keep a van or truck ready and expect timed driving.",
+   "hours": "≈2 h",
+   "when": "Chapter 2 onward",
    "steps": [
     {"text": "Randy's strand opens when you meet him; his missions appear one at a time, each unlocking the next.", "source": "IGN", "date": "Nov 2026"},
     {"text": "The strand is supply runs and deliveries, so keep a van or truck ready and expect timed driving.", "source": "GTA BOOM", "date": "Nov 2026"},
@@ -451,7 +502,9 @@
    "stage": 2,
    "kinds": ["story"],
    "missable": false,
-   "guide": "Play Tyrone's strand of side missions to the end and complete his final mission.",
+   "guide": "Play Tyrone's strand of side missions to the end and complete his final mission. The strand mixes driving and on-foot work around Vice City — keep a car nearby and armour in your pocket.",
+   "hours": "≈2 h",
+   "when": "Chapter 2 onward",
    "steps": [
     {"text": "Tyrone's strand opens when you meet him; his missions appear one at a time, each unlocking the next.", "source": "IGN", "date": "Nov 2026"},
     {"text": "The strand mixes driving and on-foot work around Vice City, so keep a car nearby and armour in your pocket.", "source": "Polygon", "date": "Nov 2026"},
@@ -469,10 +522,12 @@
    "missable": true,
    "missableNote": "The first meditation spot disappears after Chapter 1. Meditate there before you finish Chapter 1, or the trophy is locked for this playthrough.",
    "counter": {"label": "Meditation spots visited", "target": 18, "unit": "spots"},
-   "guide": "Meditate at all 18 spots across Leonida. THIS IS THE ONLY MISSABLE TROPHY: the first spot is gone after Chapter 1, so do it before the chapter ends.",
+   "guide": "Meditate at all 18 spots across Leonida. THIS IS THE ONLY MISSABLE TROPHY: the first spot is gone after Chapter 1, so do it before the chapter ends. The other 17 stay open all game.",
+   "hours": "≈3 h",
+   "when": "First spot: Chapter 1!",
    "steps": [
-    {"text": "MISSABLE: the first meditation spot sits in the Chapter 1 area and disappears once Chapter 1 ends. Meditate there before the chapter's final mission.", "source": "PowerPyx", "date": "Nov 2026"},
-    {"text": "The other 17 spots stay open for the whole game: beaches, hilltops, parks and quiet corners, marked on the map once you have found one.", "source": "GTA Wiki", "date": "Nov 2026"},
+    {"text": "MISSABLE: the first meditation spot sits in the Chapter 1 area and disappears once Chapter 1 ends. Meditate there before the chapter's final mission — this is the single step in the whole game that cannot be done later.", "source": "PowerPyx", "date": "Nov 2026"},
+    {"text": "The other 17 spots stay open for the whole game: beaches, hilltops, parks and quiet corners, marked on the map once you have found one. Sweep them district by district in free roam.", "source": "GTA Wiki", "date": "Nov 2026"},
     {"text": "Sit and meditate at each spot; tick this guide's counter after each one, and at 18 the trophy pops.", "source": "Game8", "date": "Nov 2026"}
    ],
    "sources": [{"name": "PowerPyx", "date": "Nov 2026"}, {"name": "GTA Wiki", "date": "Nov 2026"}]
@@ -485,7 +540,9 @@
    "stage": 2,
    "kinds": ["activities"],
    "missable": false,
-   "guide": "Hunt the unique animal Bret asks for. Meet Bret, take the hunt, track the animal and bring it down.",
+   "guide": "Hunt the unique animal Bret asks for. Meet Bret, take the hunt, track the animal with the hunting clues in its region and bring it down with a clean shot.",
+   "hours": "≈1.5 h",
+   "when": "After meeting Bret",
    "steps": [
     {"text": "Meet Bret to start the hunt; he names the unique animal and the region it roams in.", "source": "IGN", "date": "Nov 2026"},
     {"text": "Track it with the hunting clues in that region (tracks, calls, feeding signs) rather than wandering blind.", "source": "PowerPyx", "date": "Nov 2026"},
@@ -502,7 +559,9 @@
    "kinds": ["collectibles"],
    "missable": false,
    "counter": {"label": "Card sets completed", "target": 3, "unit": "sets"},
-   "guide": "Complete 3 full sets of collectible cards. Cards are hidden across Leonida, and each set needs every card in it.",
+   "guide": "Complete 3 full sets of collectible cards. Cards are hidden across Leonida, and each set needs every card in it — work set by set, not at random.",
+   "hours": "≈8 h",
+   "when": "Any time",
    "steps": [
     {"text": "Collectible cards are tucked into shops, landmarks and hideouts across Leonida; each card belongs to one set, and a set counts only when it is full.", "source": "GTA Wiki", "date": "Nov 2026"},
     {"text": "Work set by set instead of grabbing cards at random: the collection menu shows which cards each set is still missing.", "source": "Game8", "date": "Nov 2026"},
@@ -519,7 +578,9 @@
    "kinds": ["collectibles"],
    "missable": false,
    "counter": {"label": "WAiNK It locations", "target": 100, "unit": "locations"},
-   "guide": "Use WAiNK It at 100 different locations. Each landmark or viewpoint only counts once, so you need 100 distinct spots.",
+   "guide": "Use WAiNK It at 100 different locations. Each landmark or viewpoint only counts once, so you need 100 distinct spots — sweep district by district.",
+   "hours": "≈6 h",
+   "when": "Any time",
    "steps": [
     {"text": "WAiNK It is the in-game check-in at landmarks and viewpoints: open it at a marked spot and it logs the location.", "source": "IGN", "date": "Nov 2026"},
     {"text": "Only distinct locations count, so sweep the map district by district instead of revisiting the same viewpoints.", "source": "PowerPyx", "date": "Nov 2026"},
@@ -536,7 +597,9 @@
    "kinds": ["activities"],
    "missable": false,
    "counter": {"label": "Challenges completed", "target": 50, "unit": "challenges"},
-   "guide": "Complete any 50 challenges from the game's challenge list. They are small tasks that stack up as you play.",
+   "guide": "Complete any 50 challenges from the game's challenge list. They are small tasks that stack up as you play — pick the easy ones first.",
+   "hours": "≈4 h",
+   "when": "Any time",
    "steps": [
     {"text": "Challenges are the game's own checklist of small tasks (driving, combat, exploration, activities); the challenge menu shows them all and your progress on each.", "source": "TrueTrophies", "date": "Nov 2026"},
     {"text": "Pick the easy ones first: many complete themselves while you play the story and the other trophies.", "source": "PowerPyx", "date": "Nov 2026"},
@@ -552,7 +615,9 @@
    "stage": 2,
    "kinds": ["activities"],
    "missable": false,
-   "guide": "With your partner beside you, build a 4-star wanted level, then lose the cops and escape.",
+   "guide": "With your partner beside you, build a 4-star wanted level, then lose the cops and escape. The trophy pops the moment the wanted level clears while your partner is still with you.",
+   "hours": "≈1 h",
+   "when": "With your partner",
    "steps": [
     {"text": "Bring your partner along (story missions and free-roam partner moments both work), then raise your wanted level to 4 stars.", "source": "PowerPyx", "date": "Nov 2026"},
     {"text": "Break line of sight, then hide in an alley, a parking garage or the countryside until the stars start to blink and fade.", "source": "IGN", "date": "Nov 2026"},
@@ -569,7 +634,9 @@
    "kinds": ["activities"],
    "missable": false,
    "counter": {"label": "Shops robbed in a row", "target": 3, "unit": "shops"},
-   "guide": "With your partner, rob 3 shops back-to-back without ever losing your wanted level between them. If the stars clear, the chain breaks and you start over.",
+   "guide": "With your partner, rob 3 shops back-to-back without ever losing your wanted level between them. If the stars clear, the chain breaks and you start over — pick three shops close together.",
+   "hours": "≈1 h",
+   "when": "With your partner",
    "steps": [
     {"text": "Bring your partner, then rob a shop: aim at the clerk and take the till, and keep the wanted level you earn.", "source": "Game8", "date": "Nov 2026"},
     {"text": "Drive straight to the next shop and rob it while the stars are still up, then a third: the chain breaks if the wanted level clears at any point.", "source": "PowerPyx", "date": "Nov 2026"},
@@ -586,7 +653,9 @@
    "kinds": ["collectibles"],
    "missable": false,
    "counter": {"label": "Vehicles discovered", "target": 100, "unit": "vehicles"},
-   "guide": "Discover 100 different vehicles. Getting into a vehicle you have never driven logs it; variety is what counts.",
+   "guide": "Discover 100 different vehicles. Getting into a vehicle you have never driven logs it; variety is what counts — cars, bikes, trucks, boats and planes all count.",
+   "hours": "≈5 h",
+   "when": "Any time",
    "steps": [
     {"text": "A vehicle counts the first time you get into it, so drive anything new you see: cars, bikes, trucks, boats and planes all count.", "source": "IGN", "date": "Nov 2026"},
     {"text": "Sweep car parks, dealerships, docks and the airport for types you have not driven yet; rare spawns hide in specific districts.", "source": "PowerPyx", "date": "Nov 2026"},
@@ -603,7 +672,9 @@
    "kinds": ["activities"],
    "missable": false,
    "counter": {"label": "Best in one Combat Focus", "target": 5, "unit": "enemies"},
-   "guide": "Take down 5 enemies in a single use of Combat Focus. Group them first, then trigger it and drop all five before it ends.",
+   "guide": "Take down 5 enemies in a single use of Combat Focus. Group them first, then trigger it and drop all five before it ends — busy gang shootouts are the best spot.",
+   "hours": "≈1 h",
+   "when": "Any time",
    "steps": [
     {"text": "Combat Focus slows time for a short window; it is one use, so all 5 takedowns must happen inside that single window.", "source": "IGN", "date": "Nov 2026"},
     {"text": "Lure or wait for a group of 5 enemies to bunch up, then trigger Combat Focus and work through them with headshots.", "source": "PowerPyx", "date": "Nov 2026"},
@@ -620,6 +691,8 @@
    "kinds": ["activities"],
    "missable": false,
    "guide": "Make an unscheduled departure from Vice City International Airport: leave the airport in a plane or vehicle that was never scheduled to leave.",
+   "hours": "≈30 min",
+   "when": "Any time",
    "steps": [
     {"text": "Go to VCIA, the airport in Vice City; the runways and hangars are the departure side of the trick.", "source": "GTA Wiki", "date": "Nov 2026"},
     {"text": "Take a parked plane (or any aircraft on the field) and get it airborne, or drive a vehicle out through the airside gates: the point is leaving without a ticket or a flight.", "source": "PowerPyx", "date": "Nov 2026"},
@@ -635,7 +708,9 @@
    "stage": 2,
    "kinds": ["activities"],
    "missable": false,
-   "guide": "Deal with the Rhinos, the tanks. Get one moving under your control or survive a run-in with one, and the trophy pops.",
+   "guide": "Deal with the Rhinos, the tanks. Get one moving under your control — steal one when its crew is out of it — and the trophy pops.",
+   "hours": "≈1 h",
+   "when": "High wanted level",
    "steps": [
     {"text": "Rhinos are the military tanks that roll out at high wanted levels and around the base; the trophy is about getting into one, not just seeing one.", "source": "IGN", "date": "Nov 2026"},
     {"text": "Steal a Rhino when its crew is out of it, or climb in during a chase when it stops: drive it a short way and the trophy registers.", "source": "PowerPyx", "date": "Nov 2026"},
@@ -651,7 +726,9 @@
    "stage": 2,
    "kinds": ["activities"],
    "missable": false,
-   "guide": "Rob a jewelry store without being detected: in and out with the goods, no alarm, no witness, no wanted level.",
+   "guide": "Rob a jewelry store without being detected: in and out with the goods, no alarm, no witness, no wanted level. Case the store first — cameras, sightlines, exits.",
+   "hours": "≈1 h",
+   "when": "Any time",
    "steps": [
     {"text": "Pick a jewelry store and case it first: note the cameras, the clerk's sightlines and the exits.", "source": "GTA Wiki", "date": "Nov 2026"},
     {"text": "Move quietly, take the goods without smashing glass in sight of the clerk, and slip out before anyone raises the alarm.", "source": "PowerPyx", "date": "Nov 2026"},
@@ -668,7 +745,9 @@
    "kinds": ["activities"],
    "missable": false,
    "counter": {"label": "Bank vaults robbed", "target": 5, "unit": "vaults"},
-   "guide": "Rob 5 bank vaults and escape each time. Five vaults, five clean getaways.",
+   "guide": "Rob 5 bank vaults and escape each time. Five vaults, five clean getaways — a failed escape does not count the vault.",
+   "hours": "≈4 h",
+   "when": "Any time",
    "steps": [
     {"text": "Bank vaults are the big robbery targets in Vice City and the towns; each one is a planned job, not a smash-and-grab.", "source": "Game8", "date": "Nov 2026"},
     {"text": "Crack the vault, take the cash and escape the wanted level before the next one: a failed escape does not count the vault.", "source": "PowerPyx", "date": "Nov 2026"},
@@ -684,7 +763,9 @@
    "stage": 2,
    "kinds": ["activities"],
    "missable": false,
-   "guide": "Rob an armored truck and escape. Stop it, crack it, take the cash and lose the cops.",
+   "guide": "Rob an armored truck and escape. Stop it, crack it, take the cash and lose the cops — the trophy pops once your wanted level clears.",
+   "hours": "≈1 h",
+   "when": "Any time",
    "steps": [
     {"text": "Armored trucks run set routes around Vice City and the highways; the map and the traffic give away where they are.", "source": "GTA Wiki", "date": "Nov 2026"},
     {"text": "Stop the truck (ram it or block it), crack the rear doors, take the cash, then break away before the police box you in.", "source": "PowerPyx", "date": "Nov 2026"},
@@ -701,7 +782,9 @@
    "kinds": ["collectibles"],
    "missable": false,
    "counter": {"label": "Areas of Leonida explored", "target": 52, "unit": "areas"},
-   "guide": "Explore all 52 areas of Leonida. Every named district, town and stretch of countryside counts.",
+   "guide": "Explore all 52 areas of Leonida. Every named district, town and stretch of countryside counts — the map shades each one in as you enter it.",
+   "hours": "≈6 h",
+   "when": "Any time",
    "steps": [
     {"text": "Leonida has 52 named areas; the map shades each one in as you enter it, and the stats page keeps the running count.", "source": "PSNProfiles", "date": "Nov 2026"},
     {"text": "Drive the state border to border, detouring into every town and district; the last few are usually the small rural areas, not the cities.", "source": "IGN", "date": "Nov 2026"},
@@ -718,7 +801,9 @@
    "kinds": ["activities"],
    "missable": false,
    "counter": {"label": "Gangs' operations robbed", "target": 9, "unit": "gangs"},
-   "guide": "Rob one illegal operation belonging to each of the 9 gangs. One per gang, nine in total.",
+   "guide": "Rob one illegal operation belonging to each of the 9 gangs. One per gang, nine in total — the same gang twice does not count.",
+   "hours": "≈4 h",
+   "when": "Any time",
    "steps": [
     {"text": "Leonida has 9 gangs, each running illegal operations (stash houses, labs, fronts) in its own turf.", "source": "PowerPyx", "date": "Nov 2026"},
     {"text": "Hit one operation per gang and get clear: the same gang twice does not count, so move on to the next gang's turf.", "source": "Game8", "date": "Nov 2026"},
@@ -736,6 +821,8 @@
    "missable": false,
    "unconfirmed": true,
    "guide": "UNCONFIRMED: no published guide has confirmed the exact trigger for this trophy yet. The description points at a cocktail with a view on Ocean Beach, so that is the best lead, honestly labelled as unproven.",
+   "hours": "≈30 min",
+   "when": "Unconfirmed",
    "steps": [
     {"text": "NOT YET CONFIRMED: as of Nov 2026 no published guide lists a verified unlock method for this trophy.", "source": "PowerPyx", "date": "Nov 2026"},
     {"text": "Best lead from the official description: order a cocktail at a beachfront bar on Ocean Beach and sit with the sea view; try the bars along the beachfront in the evening.", "source": "IGN", "date": "Nov 2026"},
@@ -753,6 +840,8 @@
    "missable": false,
    "unconfirmed": true,
    "guide": "UNCONFIRMED: no published guide has confirmed the exact trigger for this trophy yet. The description points at smashing out of a vehicle showroom, so that is the best lead, honestly labelled as unproven.",
+   "hours": "≈30 min",
+   "when": "Unconfirmed",
    "steps": [
     {"text": "NOT YET CONFIRMED: as of Nov 2026 no published guide lists a verified unlock method for this trophy.", "source": "PowerPyx", "date": "Nov 2026"},
     {"text": "Best lead from the official description: take a car inside a vehicle showroom and drive it out through the glass front, in the classic style.", "source": "GTA BOOM", "date": "Nov 2026"},
@@ -768,7 +857,9 @@
    "stage": 2,
    "kinds": ["activities"],
    "missable": false,
-   "guide": "Play bowling at the Kolt & Associates bowling alley, and follow through on your throw.",
+   "guide": "Play bowling at the Kolt & Associates bowling alley, and follow through on your throw. The trophy is about playing it properly, not about the score — a strike is not required.",
+   "hours": "≈30 min",
+   "when": "Any time",
    "steps": [
     {"text": "The Kolt & Associates bowling alley is the bowling venue in Vice City; walk in and start a game at a lane.", "source": "GTA Wiki", "date": "Nov 2026"},
     {"text": "Bowl a full game and follow through on the throws: the trophy is about playing it properly, not about the score.", "source": "PowerPyx", "date": "Nov 2026"},
@@ -784,7 +875,9 @@
    "stage": 2,
    "kinds": ["activities"],
    "missable": false,
-   "guide": "Build a partnership with mass appeal: play the partner activities together until the partnership moment lands.",
+   "guide": "Build a partnership with mass appeal: play the partner activities together until the partnership moment lands. Keep doing things together between story missions rather than playing solo for long stretches.",
+   "hours": "≈2 h",
+   "when": "With your partner",
    "steps": [
     {"text": "Partner activities (driving, hanging out, shared jobs) build the partnership over time; the trophy is about the partnership, not one event.", "source": "IGN", "date": "Nov 2026"},
     {"text": "Keep doing things together between story missions rather than playing solo for long stretches.", "source": "PowerPyx", "date": "Nov 2026"},
@@ -801,7 +894,9 @@
    "kinds": ["activities"],
    "missable": false,
    "counter": {"label": "Choices made", "target": 500, "unit": "choices"},
-   "guide": "Make 500 choices. PlayStation tracks a count to 500: story choices, side choices and activity choices all feed it.",
+   "guide": "Make 500 choices. PlayStation tracks a count to 500: story choices, side choices and activity choices all feed it — play naturally and it climbs on its own.",
+   "hours": "≈3 h",
+   "when": "Any time",
    "steps": [
     {"text": "Every choice you make feeds the count: story decisions, stranger-strand choices and activity choices alike.", "source": "PSNProfiles", "date": "Nov 2026"},
     {"text": "Play naturally and the count climbs on its own; the fastest feed is the side strands and the repeatable activities, which keep offering choices.", "source": "PowerPyx", "date": "Nov 2026"},
@@ -819,6 +914,8 @@
    "missable": false,
    "unconfirmed": true,
    "guide": "UNCONFIRMED: no published guide has confirmed the exact trigger for this trophy yet. The description hints at succeeding on a second try, so that is the best lead, honestly labelled as unproven.",
+   "hours": "≈30 min",
+   "when": "Unconfirmed",
    "steps": [
     {"text": "NOT YET CONFIRMED: as of Nov 2026 no published guide lists a verified unlock method for this trophy.", "source": "PowerPyx", "date": "Nov 2026"},
     {"text": "Best lead from the official description: fail an attempt at something, then succeed at the same thing on the very next try.", "source": "GTA BOOM", "date": "Nov 2026"},
@@ -836,6 +933,8 @@
    "missable": false,
    "unconfirmed": true,
    "guide": "UNCONFIRMED: no published guide has confirmed the exact trigger for this trophy yet. The description hints at witnessing something strange, so that is the best lead, honestly labelled as unproven.",
+   "hours": "≈1 h",
+   "when": "Unconfirmed",
    "steps": [
     {"text": "NOT YET CONFIRMED: as of Nov 2026 no published guide lists a verified unlock method for this trophy.", "source": "PowerPyx", "date": "Nov 2026"},
     {"text": "Best lead from the official description: witness a strange event somewhere in Leonida, the kind of odd encounter the game hides off the main path.", "source": "IGN", "date": "Nov 2026"},
@@ -853,6 +952,8 @@
    "missable": false,
    "unconfirmed": true,
    "guide": "UNCONFIRMED: no published guide has confirmed the exact trigger for this trophy yet. The description hints at knocking someone over with a melee attack from a moving vehicle, so that is the best lead, honestly labelled as unproven.",
+   "hours": "≈30 min",
+   "when": "Unconfirmed",
    "steps": [
     {"text": "NOT YET CONFIRMED: as of Nov 2026 no published guide lists a verified unlock method for this trophy.", "source": "PowerPyx", "date": "Nov 2026"},
     {"text": "Best lead from the official description: swing a melee weapon at a pedestrian from a slow-moving vehicle, bowling them over in a drive-by.", "source": "Game8", "date": "Nov 2026"},
@@ -869,7 +970,9 @@
    "kinds": ["activities"],
    "missable": false,
    "counter": {"label": "Marked Bills laundered", "target": 250000, "unit": "$", "money": true},
-   "guide": "Launder $250,000 of Marked Bills through your contacts. Marked Bills come from heists and robberies; your contacts wash them into clean cash.",
+   "guide": "Launder $250,000 of Marked Bills through your contacts. Marked Bills come from heists and robberies; your contacts wash them into clean cash — convert them in batches.",
+   "hours": "≈6 h",
+   "when": "After the big jobs",
    "steps": [
     {"text": "Marked Bills pile up from heists, vault robberies and armored trucks; they are worthless until laundered, so keep doing the big jobs.", "source": "PowerPyx", "date": "Nov 2026"},
     {"text": "Take the bills to your laundering contacts and convert them in batches; each batch adds to the $250,000 total.", "source": "IGN", "date": "Nov 2026"},
@@ -886,7 +989,9 @@
    "kinds": ["activities"],
    "missable": false,
    "counter": {"label": "Spent across all shops", "target": 100000, "unit": "$", "money": true},
-   "guide": "Spend $100,000 across all shops. Any shop counts: clothes, weapons, cars, food. Big purchases move the total fastest.",
+   "guide": "Spend $100,000 across all shops. Any shop counts: clothes, weapons, cars, food. Big purchases move the total fastest — buy the expensive things you want anyway.",
+   "hours": "≈2 h",
+   "when": "Any time",
    "steps": [
     {"text": "Every dollar spent in any shop counts toward the $100,000, from snacks to supercars.", "source": "Game8", "date": "Nov 2026"},
     {"text": "Buy the expensive things you want anyway (weapons, cars, clothes) and the total climbs without wasting money.", "source": "PowerPyx", "date": "Nov 2026"},
@@ -903,7 +1008,9 @@
    "kinds": ["collectibles"],
    "missable": false,
    "counter": {"label": "Garage properties owned", "target": 8, "unit": "garages"},
-   "guide": "Purchase all 8 garage properties. They go on sale as you progress, and each one is a place to store your vehicles.",
+   "guide": "Purchase all 8 garage properties. They go on sale as you progress, and each one is a place to store your vehicles — the story and the heists pay enough that you will not need to grind cash just for these.",
+   "hours": "≈3 h",
+   "when": "As they unlock",
    "steps": [
     {"text": "There are 8 garage properties for sale across Leonida, marked on the map with the property sign once they are available.", "source": "GTA Wiki", "date": "Nov 2026"},
     {"text": "Buy them as the money comes in: the story and the heists pay enough that you will not need to grind cash just for these.", "source": "PowerPyx", "date": "Nov 2026"},
@@ -920,7 +1027,9 @@
    "kinds": ["activities"],
    "missable": false,
    "counter": {"label": "Vehicles registered to Scooter Bros", "target": 10, "unit": "vehicles"},
-   "guide": "Register 10 vehicles to the Scooter Bros app. Open the app on your phone, pick a vehicle you own or have found, and register it.",
+   "guide": "Register 10 vehicles to the Scooter Bros app. Open the app on your phone, pick a vehicle you own or have found, and register it — each one only counts the first time.",
+   "hours": "≈1 h",
+   "when": "Any time",
    "steps": [
     {"text": "Open the Scooter Bros app on the in-game phone; it lists the vehicles you can register.", "source": "IGN", "date": "Nov 2026"},
     {"text": "Register any 10 vehicles: cars, bikes and the rest all count, and each one only counts the first time.", "source": "PowerPyx", "date": "Nov 2026"},

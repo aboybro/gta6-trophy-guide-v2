@@ -1,8 +1,13 @@
-// Rendering for Leonida Ledger: the audit strip, the roadmap, the counters,
-// the trophy checklist with its cited guides, and the sources panel. Every
-// string from the data file is set through textContent, never innerHTML, so
-// no trophy name or guide line can ever inject markup.
-import { clampCounterValue, formatCounterAmount } from './state.js';
+// Rendering for Leonida Ledger: the audit strip, the counter strip, the
+// Next Up planner, the roadmap, the missable watch, the counters, the trophy
+// checklist with its cited guides and player notes, and the sources panel.
+// Every string from the data file is set through textContent, never
+// innerHTML, so no trophy name or guide line can ever inject markup. Source
+// links are plain <a> elements the reader follows; the app fetches nothing.
+import { clampCounterValue, formatCounterAmount, saveTrophyNote } from './state.js';
+import {
+  planNextTrophies, estimateHoursLeft, stageProgress, kindProgress,
+} from './planner.js';
 
 // Build one element, optionally with a class, a text label and child nodes.
 export function makeElement(tag, className, text, children) {
@@ -66,22 +71,117 @@ export function renderAuditStrip(data) {
   strip.textContent = parts.join(' · ');
 }
 
-export function renderRoadmap(data) {
-  const grid = document.getElementById('stageGrid');
-  grid.replaceChildren();
+// The six biggest counters at a glance, with a mini bar each, so the grind
+// is visible without scrolling to the counters section.
+const STRIP_COUNTER_IDS = [15, 17, 31, 35, 42, 48];
+
+export function renderCounterStrip(data, state) {
+  const strip = document.getElementById('counterStrip');
+  strip.replaceChildren();
   const byId = new Map();
   for (const trophy of data.trophies) byId.set(trophy.id, trophy);
+  for (const id of STRIP_COUNTER_IDS) {
+    const trophy = byId.get(id);
+    if (!trophy || !trophy.counter) continue;
+    const value = clampCounterValue(state.counters[id] ?? 0, trophy.counter.target);
+    const cell = makeElement('div', 'stripCounter');
+    cell.appendChild(makeElement('span', 'stripCounterLabel', trophy.counter.label));
+    const fill = makeElement('div', 'stripCounterFill');
+    fill.style.width = Math.round((value / trophy.counter.target) * 100) + '%';
+    cell.appendChild(makeElement('div', 'stripCounterBar', null, [fill]));
+    cell.appendChild(makeElement('span', 'stripCounterValue',
+      formatCounterAmount(value, trophy.counter) + '/' +
+      formatCounterAmount(trophy.counter.target, trophy.counter)));
+    strip.appendChild(cell);
+  }
+}
+
+export function renderKindProgress(data, state) {
+  const box = document.getElementById('kindProgress');
+  box.replaceChildren();
+  for (const kind of ['story', 'collectibles', 'activities']) {
+    const { earned, total } = kindProgress(data, state, kind);
+    const row = makeElement('div', 'kindRow');
+    row.appendChild(makeElement('span', 'kindRowLabel', kind));
+    const fill = makeElement('div', 'kindRowFill');
+    fill.style.width = Math.round((earned / total) * 100) + '%';
+    row.appendChild(makeElement('div', 'kindRowBar', null, [fill]));
+    row.appendChild(makeElement('span', 'kindRowValue', earned + '/' + total));
+    box.appendChild(row);
+  }
+}
+
+export function renderNextUpPlanner(data, state, onJumpToTrophy) {
+  const list = document.getElementById('nextUpList');
+  list.replaceChildren();
+  const planned = planNextTrophies(data, state);
+  if (planned.length === 0) {
+    list.appendChild(makeElement('li', 'nextUpDone',
+      'All 54 done — the Platinum is yours. Congratulations, Leonida Legend.'));
+    return;
+  }
+  for (const { trophy, why } of planned) {
+    const item = makeElement('li', 'nextUpItem');
+    const jump = makeElement('button', 'nextUpName', trophy.name);
+    jump.type = 'button';
+    jump.addEventListener('click', () => onJumpToTrophy(trophy.id));
+    item.appendChild(jump);
+    item.appendChild(makeElement('span', 'gradeBadge grade-' + trophy.grade, trophy.grade));
+    if (trophy.missable) item.appendChild(makeElement('span', 'tag missableTag', '⚠ MISSABLE'));
+    item.appendChild(makeElement('span', 'nextUpWhy', why));
+    item.appendChild(makeElement('span', 'tag', trophy.hours + ' · ' + trophy.when));
+    list.appendChild(item);
+  }
+  const { hours, counted } = estimateHoursLeft(data, state);
+  list.appendChild(makeElement('li', 'nextUpHours',
+    '≈' + hours + ' hours left across ' + counted + ' open trophies, by this guide\u2019s own time estimates.'));
+}
+
+export function renderRoadmap(data, state) {
+  const grid = document.getElementById('stageGrid');
+  grid.replaceChildren();
   for (const stage of data.roadmap) {
-    const names = stage.trophies.map((id) => byId.get(id).name).join(' · ');
+    const inStage = data.trophies.filter((trophy) => trophy.stage === stage.stage);
+    const { earned, total } = stageProgress(data, state, stage.stage);
     const card = makeElement('article', 'stageCard', null, [
       makeElement('h3', null, 'Stage ' + stage.stage + ' — ' + stage.title),
-      makeElement('p', 'stageHours', stage.hours + ' · ' + stage.trophies.length + ' trophies'),
-      makeElement('p', null, stage.order),
-      makeElement('p', 'stageTrophies', names),
+      makeElement('p', 'stageHours', stage.hours + ' · ' + total + ' trophies · ' + earned + ' earned'),
     ]);
+    const fill = makeElement('div', 'stageProgressFill');
+    fill.style.width = Math.round((earned / total) * 100) + '%';
+    card.appendChild(makeElement('div', 'stageProgressBar', null, [fill]));
+    const plan = makeElement('ol', 'stagePlan');
+    for (const step of stage.plan) plan.appendChild(makeElement('li', null, step));
+    card.appendChild(plan);
+    card.appendChild(makeElement('p', 'stageTrophies',
+      inStage.map((trophy) => trophy.name).join(' · ')));
     if (stage.warning) card.appendChild(makeElement('p', 'stageWarning', stage.warning));
     grid.appendChild(card);
   }
+}
+
+export function renderMissableWatch(data, state) {
+  const box = document.getElementById('missableWatch');
+  box.replaceChildren();
+  const missable = data.trophies.filter((trophy) => trophy.missable);
+  for (const trophy of missable) {
+    const card = makeElement('article', 'missableCard');
+    card.appendChild(makeElement('h3', null, '⚠ ' + trophy.name + ' — the only missable trophy'));
+    card.appendChild(makeElement('p', null, trophy.missableNote));
+    if (trophy.counter) {
+      const value = clampCounterValue(state.counters[trophy.id] ?? 0, trophy.counter.target);
+      card.appendChild(makeElement('p', null,
+        'Counter: ' + trophy.counter.label + ' ' + value + '/' + trophy.counter.target + ' spots.'));
+    }
+    const list = makeElement('ol', 'missableChecklist');
+    list.appendChild(makeElement('li', null, 'Before the last Chapter 1 mission, go to the first meditation spot and meditate.'));
+    list.appendChild(makeElement('li', null, 'Check the counter above: if it reads 1 of 18 or more, the missable step is done.'));
+    list.appendChild(makeElement('li', null, 'After Chapter 1, the other 17 spots stay open for the whole game.'));
+    card.appendChild(list);
+    box.appendChild(card);
+  }
+  box.appendChild(makeElement('p', 'missableSafe',
+    'The other 54 trophies cannot be missed: every one of them can be earned after the story, in free roam.'));
 }
 
 function buildCounterCard(trophy, state, onCounterChange, onJumpToTrophy) {
@@ -161,6 +261,7 @@ function buildTrophyRow(trophy, data, state, ui, callbacks) {
   const meta = makeElement('div', 'trophyMeta');
   meta.appendChild(makeElement('span', 'tag', 'Stage ' + trophy.stage));
   for (const kind of trophy.kinds) meta.appendChild(makeElement('span', 'tag', kind));
+  meta.appendChild(makeElement('span', 'tag', trophy.hours + ' · ' + trophy.when));
   if (trophy.missable) meta.appendChild(makeElement('span', 'tag missableTag', '⚠ MISSABLE'));
   if (trophy.unconfirmed) meta.appendChild(makeElement('span', 'tag unconfirmedTag', 'Method not yet confirmed'));
   if (trophy.counter) {
@@ -191,6 +292,19 @@ function buildTrophyRow(trophy, data, state, ui, callbacks) {
   const srcNames = trophy.sources.map((s) => s.name + ' (' + s.date + ')').join(', ');
   body.appendChild(makeElement('p', 'guideSources',
     'Sources for this trophy: ' + srcNames + '. Guide written in this entry’s own words.'));
+  const noteLabel = makeElement('label', 'noteLabel', 'Your note on this trophy: ');
+  const noteInput = document.createElement('input');
+  noteInput.type = 'text';
+  noteInput.maxLength = 500;
+  noteInput.placeholder = 'e.g. best spot found, what worked…';
+  noteInput.value = state.notes[trophy.id] || '';
+  noteInput.setAttribute('aria-label', 'Your note on ' + trophy.name);
+  noteInput.addEventListener('change', () => {
+    saveTrophyNote(state, trophy.id, noteInput.value);
+    callbacks.onSaveNote();
+  });
+  noteLabel.appendChild(noteInput);
+  body.appendChild(noteLabel);
   row.appendChild(body);
   return row;
 }
@@ -210,7 +324,15 @@ export function renderSources(data) {
   panel.replaceChildren();
   for (const source of data.sources) {
     const row = makeElement('div', 'sourceRow');
-    row.appendChild(makeElement('strong', null, source.name + ' '));
+    if (source.url) {
+      const link = document.createElement('a');
+      link.href = source.url;
+      link.rel = 'noopener';
+      link.textContent = source.name + ' ';
+      row.appendChild(link);
+    } else {
+      row.appendChild(makeElement('strong', null, source.name + ' '));
+    }
     row.appendChild(makeElement('span', 'sourceDate', source.date));
     row.appendChild(document.createTextNode(' — ' + source.work + '. Used for: ' + source.covers + '.'));
     panel.appendChild(row);

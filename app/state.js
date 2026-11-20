@@ -1,13 +1,13 @@
 // Tracker state for Leonida Ledger: which trophies the player has earned,
-// where each counter stands, and whether the spoiler setting is on. The
-// state lives in localStorage, can be exported to a JSON file and imported
-// back, and is never touched by the demo states the screenshots use (those
-// live in memory only, in app.js).
-export const STORAGE_KEY = 'leonida-ledger-atlas-v2';
+// where each counter stands, the player's own notes per trophy, and whether
+// the spoiler setting is on. The state lives in localStorage, can be exported
+// to a JSON file and imported back, and is never touched by the demo states
+// the screenshots use (those live in memory only, in app.js).
+export const STORAGE_KEY = 'leonida-ledger-platinum-v3';
 
-// A fresh, empty tracker: nothing earned, every counter at zero.
+// A fresh, empty tracker: nothing earned, every counter at zero, no notes.
 export function blankTrackerState() {
-  return { earned: {}, counters: {}, spoiler: false };
+  return { earned: {}, counters: {}, notes: {}, spoiler: false };
 }
 
 function isRecord(value) {
@@ -28,6 +28,7 @@ export function loadTrackerState() {
   return {
     earned: isRecord(stored.earned) ? stored.earned : {},
     counters: isRecord(stored.counters) ? stored.counters : {},
+    notes: isRecord(stored.notes) ? stored.notes : {},
     spoiler: stored.spoiler === true,
   };
 }
@@ -53,6 +54,14 @@ export function clampCounterValue(value, target) {
 export function formatCounterAmount(value, counter) {
   if (counter && counter.money) return '$' + Number(value).toLocaleString('en-US');
   return String(value);
+}
+
+// A player's own note on a trophy: free text, trimmed, at most 500 letters.
+export function saveTrophyNote(state, id, text) {
+  const clean = String(text || '').trim().slice(0, 500);
+  if (clean) state.notes[id] = clean;
+  else delete state.notes[id];
+  return clean;
 }
 
 // Offer the tracker as a downloadable JSON file the player can keep or share.
@@ -81,6 +90,7 @@ export function readTrackerImportFile(file) {
         resolve({
           earned: isRecord(parsed.earned) ? parsed.earned : {},
           counters: isRecord(parsed.counters) ? parsed.counters : {},
+          notes: isRecord(parsed.notes) ? parsed.notes : {},
           spoiler: parsed.spoiler === true,
         });
       } catch {

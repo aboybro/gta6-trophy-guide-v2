@@ -1,4 +1,4 @@
-/* Leonida Ledger — Atlas Edition. One look of its own: a deep Leonida
+/* Leonida Ledger — Platinum Edition. One look of its own: a deep Leonida
    night, sun-faded gold accents, dense but readable rows. No images and no
    web fonts anywhere — every pixel comes from these rules. */
 * { box-sizing: border-box; }
@@ -20,11 +20,23 @@ a { color: #8fd3ff; }
 .progressBar { background: #0c1715; border-radius: 6px; height: 12px; margin: 8px 0 6px; overflow: hidden; }
 .progressFill { background: linear-gradient(90deg, #e8a13a, #ffd97a); height: 100%; width: 0; }
 .progressSub { color: #b9c9c4; font-size: 13px; }
+.kindProgress { margin-top: 8px; }
+.kindRow { align-items: center; display: flex; gap: 8px; margin-top: 4px; }
+.kindRowLabel { color: #b9c9c4; font-size: 12px; text-transform: capitalize; width: 76px; }
+.kindRowBar { background: #0c1715; border-radius: 4px; flex: 1; height: 7px; overflow: hidden; }
+.kindRowFill { background: #57b98a; height: 100%; }
+.kindRowValue { color: #eef2f0; font-size: 12px; font-weight: 700; width: 44px; text-align: right; }
 .auditStrip {
   background: #233d33; border: 1px solid #4a7a5e; border-radius: 8px;
   color: #d9f2e2; font-size: 14px; font-weight: 600;
   margin: 16px 0 0; padding: 9px 12px;
 }
+.counterStrip { display: grid; gap: 8px; grid-template-columns: repeat(6, 1fr); margin-top: 10px; }
+.stripCounter { background: #1c322f; border: 1px solid #33524c; border-radius: 8px; padding: 8px 10px; }
+.stripCounterLabel { color: #b9c9c4; display: block; font-size: 12px; }
+.stripCounterBar { background: #0c1715; border-radius: 4px; height: 6px; margin: 5px 0 4px; overflow: hidden; }
+.stripCounterFill { background: #e8a13a; height: 100%; }
+.stripCounterValue { font-size: 13px; font-weight: 700; }
 .controls { align-items: center; display: flex; flex-wrap: wrap; gap: 10px; margin: 14px 0 4px; }
 .controls input[type="search"] {
   background: #0c1715; border: 1px solid #33524c; border-radius: 6px; color: #eef2f0;
@@ -41,13 +53,29 @@ a { color: #8fd3ff; }
 .importLabel input { display: none; }
 .missableBanner { background: #4a2418; border: 1px solid #c25e3a; border-radius: 8px; font-size: 14px; margin: 12px 0 0; padding: 10px 12px; }
 .sectionNote { color: #b9c9c4; font-size: 14px; margin: 2px 0 10px; }
+.nextUpList { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.nextUpItem { align-items: center; background: #1c322f; border: 1px solid #33524c; border-radius: 8px; display: flex; flex-wrap: wrap; gap: 8px; padding: 8px 12px; }
+.nextUpName { all: unset; color: #8fd3ff; cursor: pointer; font-size: 15px; font-weight: 700; text-decoration: underline; }
+.nextUpWhy { color: #c8d8d2; font-size: 13px; flex: 1; min-width: 200px; }
+.nextUpHours { color: #b9c9c4; font-size: 13px; padding: 2px 4px; }
+.nextUpDone { background: #233d33; border: 1px solid #4a7a5e; border-radius: 8px; color: #d9f2e2; font-weight: 700; padding: 10px 12px; }
 .stageGrid { display: grid; gap: 12px; grid-template-columns: repeat(3, 1fr); }
 .stageCard { background: #1c322f; border: 1px solid #33524c; border-radius: 10px; padding: 12px 14px; }
 .stageCard h3 { color: #ffd97a; font-size: 16px; margin: 0 0 2px; }
 .stageHours { color: #b9c9c4; font-size: 13px; margin: 0 0 8px; }
 .stageCard p { font-size: 14px; margin: 6px 0; }
+.stageProgressBar { background: #0c1715; border-radius: 4px; height: 8px; margin: 6px 0 8px; overflow: hidden; }
+.stageProgressFill { background: #57b98a; height: 100%; }
+.stagePlan { font-size: 14px; margin: 0 0 8px; padding-left: 20px; }
+.stagePlan li { margin: 0 0 4px; }
 .stageWarning { background: #4a2418; border: 1px solid #c25e3a; border-radius: 6px; font-size: 13px; padding: 7px 9px; }
 .stageTrophies { color: #d9f2e2; font-size: 13px; }
+.missableCard { background: #4a2418; border: 1px solid #c25e3a; border-radius: 10px; padding: 12px 14px; }
+.missableCard h3 { color: #ffd0b8; font-size: 17px; margin: 0 0 6px; }
+.missableCard p { font-size: 14px; margin: 6px 0; }
+.missableChecklist { font-size: 14px; margin: 8px 0 0; padding-left: 20px; }
+.missableChecklist li { margin: 0 0 4px; }
+.missableSafe { background: #233d33; border: 1px solid #4a7a5e; border-radius: 8px; color: #d9f2e2; font-size: 14px; margin-top: 10px; padding: 9px 12px; }
 .counterGrid { display: grid; gap: 10px; grid-template-columns: repeat(3, 1fr); }
 .counterCard { background: #1c322f; border: 1px solid #33524c; border-radius: 10px; padding: 10px 12px; }
 .counterCard h3 { font-size: 14px; margin: 0 0 2px; }
@@ -97,6 +125,11 @@ a { color: #8fd3ff; }
   display: inline-block; font-size: 12px; font-weight: 700; margin-left: 6px; padding: 1px 8px; white-space: nowrap;
 }
 .guideSources { color: #b9c9c4; font-size: 13px; margin: 8px 0 0; }
+.noteLabel { color: #b9c9c4; display: block; font-size: 13px; margin-top: 10px; }
+.noteLabel input {
+  background: #0c1715; border: 1px solid #33524c; border-radius: 6px; color: #eef2f0;
+  font-size: 13px; margin-left: 4px; padding: 6px 8px; width: 70%;
+}
 .spoilerMask { color: #5f7a72; font-style: normal; }
 #sourcesList { display: grid; gap: 8px; grid-template-columns: repeat(2, 1fr); }
 .sourceRow { background: #1c322f; border: 1px solid #33524c; border-radius: 8px; font-size: 14px; padding: 9px 11px; }
@@ -107,4 +140,5 @@ footer { border-top: 1px solid #33524c; color: #8aa39b; font-size: 13px; margin-
 @media (max-width: 860px) {
   .masthead { flex-direction: column; }
   .stageGrid, .counterGrid, #sourcesList { grid-template-columns: 1fr; }
+  .counterStrip { grid-template-columns: repeat(2, 1fr); }
 }

@@ -1,5 +1,5 @@
 <!doctype html>
-<!-- Leonida Ledger — Atlas Edition. Offline guide and tracker for GTA VI's
+<!-- Leonida Ledger — Platinum Edition. Offline guide and tracker for GTA VI's
      55 PlayStation 5 trophies. Plain static files: no build step, no network
      at run time. The data file is fetched at run time so the first load stays
      small; everything else is inline in this page and its scripts. -->
@@ -7,23 +7,25 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Leonida Ledger — Atlas Edition · GTA VI Trophy Guide &amp; Tracker</title>
+<title>Leonida Ledger — Platinum Edition · GTA VI Trophy Guide &amp; Tracker</title>
 <link href="style.css" rel="stylesheet">
 </head>
 <body>
 <header class="masthead">
   <div>
-    <h1>Leonida Ledger <span class="edition">Atlas Edition</span></h1>
-    <p class="tagline">Every one of GTA VI's 55 PlayStation 5 trophies, with a cited step-by-step guide, a roadmap to the Platinum, and a tracker that remembers.</p>
+    <h1>Leonida Ledger <span class="edition">Platinum Edition</span></h1>
+    <p class="tagline">Every one of GTA VI's 55 PlayStation 5 trophies, with a cited step-by-step guide, a roadmap to the Platinum, a Next Up planner, and a tracker that remembers.</p>
   </div>
   <div class="progressBox" id="progressBox">
     <div class="progressNumbers" id="progressNumbers">0 of 55 earned · 0%</div>
     <div class="progressBar" role="progressbar" aria-label="Trophies earned"><div class="progressFill" id="progressFill"></div></div>
     <div class="progressSub" id="progressSub">21 counters · 3 roadmap stages</div>
+    <div class="kindProgress" id="kindProgress"></div>
   </div>
 </header>
 
 <p class="auditStrip" id="auditStrip">Loading the official list…</p>
+<div class="counterStrip" id="counterStrip" aria-label="Key counters at a glance"></div>
 
 <div class="controls" id="controls">
   <label class="searchLabel">Search <input id="search" type="search" placeholder="trophy, mission, place…" autocomplete="off"></label>
@@ -43,6 +45,12 @@
 
 <p class="missableBanner" id="missableBanner">⚠ Only one trophy can be missed: <strong>Positive Mental Attitude</strong> — its first meditation spot is gone after Chapter 1. Meditate there before the chapter ends.</p>
 
+<section id="nextup" aria-labelledby="nextupTitle">
+  <h2 id="nextupTitle">Next up — your fastest five</h2>
+  <p class="sectionNote">The planner reads your saved progress and lists the five trophies you can earn soonest, in the order the roadmap says to do them. The missable one always comes first while it is still open.</p>
+  <ol class="nextUpList" id="nextUpList"></ol>
+</section>
+
 <main>
   <section id="checklist" aria-labelledby="checklistTitle">
     <h2 id="checklistTitle">Trophy checklist</h2>
@@ -52,8 +60,14 @@
 
   <section id="roadmap" aria-labelledby="roadmapTitle">
     <h2 id="roadmapTitle">Roadmap to the Platinum</h2>
-    <p class="sectionNote">Three stages, about 180–200 hours in total. Every stage lists its trophies, its order, and its warnings.</p>
+    <p class="sectionNote">Three stages, about 180–200 hours in total. Every stage lists its trophies, its plan in order, and its warnings.</p>
     <div class="stageGrid" id="stageGrid"></div>
+  </section>
+
+  <section id="missable" aria-labelledby="missableTitle">
+    <h2 id="missableTitle">Missable watch — one trophy, one deadline</h2>
+    <p class="sectionNote">Built from the official descriptions: only one of the 55 trophies can be missed. The other 54 can all be earned after the story, in free roam.</p>
+    <div id="missableWatch"></div>
   </section>
 
   <section id="counters" aria-labelledby="countersTitle">
@@ -71,7 +85,7 @@
 </main>
 
 <footer>
-  <p>Unofficial fan guide. Not affiliated with Rockstar Games, Sony or PlayStation. No Rockstar logo or official artwork is used. Works fully offline: it fetches nothing at run time.</p>
+  <p>Unofficial fan guide. Not affiliated with Rockstar Games, Sony or PlayStation. No Rockstar logo or official artwork is used. Works fully offline: it fetches nothing at run time. Time estimates are this guide's own estimates, marked ≈, not PlayStation's.</p>
 </footer>
 
 <script type="module" src="app.js"></script>

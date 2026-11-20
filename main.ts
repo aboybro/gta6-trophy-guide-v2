@@ -1,4 +1,4 @@
-// Leonida Ledger — Atlas Edition, a gta6-trophy-guide-01 entry (Node 22,
+// Leonida Ledger — Platinum Edition, a gta6-trophy-guide-01 entry (Node 22,
 // standard library only). The guide itself is plain static files under app/:
 // app/index.html opens in desktop Chrome and works with the network off, its
 // trophy list and cited guides are app/data/trophies.json, fetched at run
@@ -16,7 +16,7 @@
 // Outside the grader's container, MAKEFUN_OUTPUT_DIR stands in for /output:
 //   mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
 
-import { cpSync, existsSync, mkdirSync, writeFileSync } from 'node:fs';
+import { cpSync, existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { buildDossier } from './vendor/makefun-frontend.ts';
@@ -45,7 +45,24 @@ function handInGuide() {
     throw new Error('screenshots/ is missing: take the 4 screenshots before handing in');
   }
   cpSync(join(repoRoot, 'screenshots'), join(outputDir, 'screenshots'), { recursive: true });
+  // Guard the hand-in before writing the dossier: the trophy file must hold
+  // all 55 official trophies with a non-blank guide each, or the gate's
+  // trophies row fails and the entry is never judged. A bad hand-in fails
+  // loudly here instead of silently shipping an invalid entry.
+  const trophyFile = JSON.parse(readFileSync(join(outputDir, 'app', 'data', 'trophies.json'), 'utf8'));
+  const trophies = trophyFile.trophies ?? trophyFile;
+  if (!Array.isArray(trophies) || trophies.length !== 55) {
+    throw new Error('app/data/trophies.json must hold exactly 55 trophies, found ' + (Array.isArray(trophies) ? trophies.length : 'none'));
+  }
+  for (const trophy of trophies) {
+    if (typeof trophy.name !== 'string' || !trophy.name.trim()) throw new Error('a trophy has no name');
+    if (typeof trophy.guide !== 'string' || !trophy.guide.trim()) throw new Error('trophy ' + trophy.name + ' has no guide');
+    if (!Array.isArray(trophy.steps) || trophy.steps.length === 0) throw new Error('trophy ' + trophy.name + ' has no cited steps');
+  }
   writeFileSync(join(outputDir, 'dossier.json'), buildDossier(outputDir, DOSSIER_OPTIONS));
+  // The dossier must parse back as JSON: a corrupt dossier fails the gate's
+  // dossier_matches row, so check it now while the failure is still cheap.
+  JSON.parse(readFileSync(join(outputDir, 'dossier.json'), 'utf8'));
 }
 
 handInGuide();

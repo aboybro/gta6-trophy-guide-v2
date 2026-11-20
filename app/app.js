@@ -1,16 +1,17 @@
 // Bootstrap for Leonida Ledger: fetches app/data/trophies.json at run time,
 // wires the controls, and renders the guide. Demo states come from the URL
-// (?demo=, ?open=<id>, ?filter=<kind>, #roadmap / #counters / #trophy-<id>)
-// and live in memory only, so a demo link never touches a player's saved
-// progress. After the first render it sets window.__shotReady, which the
-// screenshot run waits for.
+// (?demo=, ?open=<id>, ?filter=<kind>, #roadmap / #missable / #counters /
+// #trophy-<id>) and live in memory only, so a demo link never touches a
+// player's saved progress. After the first render it sets window.__shotReady,
+// which the screenshot run waits for.
 import {
   blankTrackerState, loadTrackerState, saveTrackerState, clampCounterValue,
   downloadTrackerExport, readTrackerImportFile,
 } from './state.js';
 import {
-  renderAuditStrip, renderRoadmap, renderCounters, renderTrophyList,
-  renderSources, updateProgressNumbers,
+  renderAuditStrip, renderCounterStrip, renderKindProgress,
+  renderNextUpPlanner, renderRoadmap, renderMissableWatch, renderCounters,
+  renderTrophyList, renderSources, updateProgressNumbers,
 } from './render.js';
 
 const KIND_FILTERS = ['story', 'missable', 'collectibles', 'activities', 'online'];
@@ -22,11 +23,13 @@ const DEMO_EARNED = {
   steps: [2, 3, 4, 8, 15],
   roadmap: [2, 3, 4, 8, 28],
   counters: [2, 3, 15, 17, 35],
+  spoiler: [2, 3, 4, 8, 15, 17],
 };
 const DEMO_COUNTERS = {
-  cover: { 15: 120, 17: 31, 31: 55, 35: 64, 42: 30 },
+  cover: { 15: 120, 17: 31, 31: 55, 35: 64, 42: 30, 48: 125 },
   steps: { 15: 187 },
   counters: { 15: 187, 17: 31, 31: 55, 35: 64, 42: 30, 52: 125000, 53: 42000 },
+  spoiler: { 15: 120, 17: 31 },
 };
 
 function readDemoState() {
@@ -39,7 +42,8 @@ function readDemoState() {
     demoName: demo,
     demoEarned: earnedIds ? Object.fromEntries(earnedIds.map((id) => [id, true])) : null,
     demoCounters: DEMO_COUNTERS[demo] || null,
-    openGuideId: Number.isInteger(openId) && openId > 0 ? openId : (demo === 'cover' ? 1 : null),
+    demoSpoiler: demo === 'spoiler',
+    openGuideId: Number.isInteger(openId) && openId > 0 ? openId : (demo === 'cover' ? 28 : null),
     filter: filter && KIND_FILTERS.includes(filter) ? filter : null,
   };
 }
@@ -48,7 +52,12 @@ const demo = readDemoState();
 // A demo replaces the saved tracker wholesale (in memory only); a normal
 // visit loads whatever the player saved in this browser.
 let tracker = demo.demoEarned
-  ? { ...blankTrackerState(), earned: demo.demoEarned, counters: demo.demoCounters || {} }
+  ? {
+    ...blankTrackerState(),
+    earned: demo.demoEarned,
+    counters: demo.demoCounters || {},
+    spoiler: demo.demoSpoiler,
+  }
   : loadTrackerState();
 const ui = {
   openGuideId: demo.openGuideId,
@@ -61,9 +70,23 @@ function persistTracker() {
   if (!demo.demoEarned) saveTrackerState(tracker);
 }
 
+function jumpToTrophy(id) {
+  ui.filters.kind = 'all';
+  ui.filters.grade = 'all';
+  ui.filters.query = '';
+  document.getElementById('search').value = '';
+  ui.openGuideId = id;
+  renderAll();
+  document.getElementById('trophy-' + id)?.scrollIntoView({ behavior: 'instant', block: 'center' });
+}
+
 function renderAll() {
   renderAuditStrip(guideData);
-  renderRoadmap(guideData);
+  renderCounterStrip(guideData, tracker);
+  renderKindProgress(guideData, tracker);
+  renderNextUpPlanner(guideData, tracker, jumpToTrophy);
+  renderRoadmap(guideData, tracker);
+  renderMissableWatch(guideData, tracker);
   renderCounters(guideData, tracker, onCounterChange, jumpToTrophy);
   renderTrophyList(guideData, tracker, ui, {
     onToggleEarned: (id, checked) => {
@@ -76,6 +99,7 @@ function renderAll() {
       renderAll();
       if (ui.openGuideId) document.getElementById('trophy-' + id)?.scrollIntoView({ behavior: 'instant', block: 'nearest' });
     },
+    onSaveNote: () => persistTracker(),
   });
   renderSources(guideData);
   updateProgressNumbers(guideData, tracker);
@@ -86,16 +110,6 @@ function onCounterChange(id, value) {
   tracker.counters[id] = clampCounterValue(value, trophy.counter.target);
   persistTracker();
   renderAll();
-}
-
-function jumpToTrophy(id) {
-  ui.filters.kind = 'all';
-  ui.filters.grade = 'all';
-  ui.filters.query = '';
-  document.getElementById('search').value = '';
-  ui.openGuideId = id;
-  renderAll();
-  document.getElementById('trophy-' + id)?.scrollIntoView({ behavior: 'instant', block: 'center' });
 }
 
 function wireControls() {
@@ -162,12 +176,20 @@ async function bootLeonidaLedger() {
     document.getElementById('trophy-' + ui.openGuideId)?.scrollIntoView({ behavior: 'instant', block: 'center' });
   }
   // Scroll a hash target into view after the list renders, so screenshot
-  // states (#roadmap, #counters, #trophy-<id>) are deterministic.
-  if (location.hash) {
-    const target = document.querySelector(location.hash);
-    if (target) target.scrollIntoView({ behavior: 'instant' });
+  // states (#roadmap, #missable, #counters, #trophy-<id>) are deterministic.
+  // The browser re-applies its own fragment scroll after the page grows,
+  // aiming at the anchor's old pre-render position, so re-apply ours once
+  // that has settled and only then signal readiness.
+  const hashTarget = location.hash ? document.querySelector(location.hash) : null;
+  if (hashTarget) hashTarget.scrollIntoView({ behavior: 'instant' });
+  if (hashTarget) {
+    setTimeout(() => {
+      hashTarget.scrollIntoView({ behavior: 'instant' });
+      window.__shotReady = true;
+    }, 800);
+  } else {
+    window.__shotReady = true;
   }
-  window.__shotReady = true;
 }
 
 bootLeonidaLedger();
